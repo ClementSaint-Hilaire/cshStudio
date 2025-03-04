@@ -31,7 +31,7 @@ const config: Config = {
       'display': '3.375rem'
     },
     fontFamily: {
-      'satoshi-variable': 'Satoshi Variable'
+      satoshi: ['var(--font-satoshi)'],
     },
     borderRadius: {
       'rounded-0': '0rem',
