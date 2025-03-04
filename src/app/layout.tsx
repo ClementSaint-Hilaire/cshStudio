@@ -1,11 +1,5 @@
 import type { Metadata } from 'next'
-import localFont from 'next/font/local'
 import './globals.css'
-
-const satoshi = localFont({
-  src: '../fonts/Satoshi-Variable.woff2',
-  variable: '--font-satoshi',
-})
 
 export const metadata: Metadata = {
   title: 'CSH Studio',
@@ -19,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${satoshi.variable} font-sans`}>{children}</body>
+      <body className="bg-monochrome-100 dark:bg-monochrome-900 font-['Satoshi Variable']">
+        {children}
+      </body>
     </html>
   )
 } 

@@ -1,15 +1,3 @@
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src/app/layout.tsx","import":"","arguments":[{"src":"../fonts/Satoshi-Variable.woff2","variable":"--font-satoshi"}],"variableName":"satoshi"} ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-font-family: '__satoshi_5ab76a';
-src: url(/_next/static/media/d9396795aa5ec363-s.p.woff2) format('woff2');
-font-display: swap;
-}@font-face {font-family: '__satoshi_Fallback_5ab76a';src: local("Arial");ascent-override: 92.36%;descent-override: 21.95%;line-gap-override: 9.14%;size-adjust: 109.35%
-}.__className_5ab76a {font-family: '__satoshi_5ab76a', '__satoshi_Fallback_5ab76a'
-}.__variable_5ab76a {--font-satoshi: '__satoshi_5ab76a', '__satoshi_Fallback_5ab76a'
-}
-
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
@@ -132,7 +120,7 @@ font-display: swap;
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  border-color: currentColor; /* 2 */
 }
 
 ::before,
@@ -157,7 +145,7 @@ html,
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: var(--font-satoshi); /* 4 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
@@ -514,85 +502,136 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
-.z-10 {
-  z-index: 10;
-}
-.mt-4 {
-  margin-top: 1rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .flex {
   display: flex;
 }
-.min-h-screen {
-  min-height: 100vh;
+.inline-flex {
+  display: inline-flex;
+}
+.hidden {
+  display: none;
+}
+.h-auto {
+  height: auto;
+}
+.w-1\/3 {
+  width: 33.333333%;
 }
 .w-full {
   width: 100%;
 }
-.max-w-5xl {
-  max-width: 64rem;
+.max-w-\[1400px\] {
+  max-width: 1400px;
+}
+.flex-none {
+  flex: none;
+}
+.shrink {
+  flex-shrink: 1;
+}
+.grow {
+  flex-grow: 1;
+}
+.basis-0 {
+  flex-basis: 0px;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .flex-col {
   flex-direction: column;
 }
+.items-start {
+  align-items: flex-start;
+}
 .items-center {
   align-items: center;
+}
+.justify-center {
+  justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
 }
-.p-24 {
-  padding: 6rem;
+.gap-32 {
+  gap: 8rem;
 }
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.gap-8 {
+  gap: 2rem;
 }
-.font-sans {
-  font-family: var(--font-satoshi);
+.gap-\[16px\] {
+  gap: 16px;
 }
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.gap-\[32px\] {
+  gap: 32px;
 }
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.self-stretch {
+  align-self: stretch;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.overflow-scroll {
+  overflow: scroll;
 }
-.font-bold {
-  font-weight: 700;
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+.bg-monochrome-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.font-normal {
+  font-weight: 400;
+}
+.leading-\[34px\] {
+  line-height: 34px;
+}
+.leading-\[38px\] {
+  line-height: 38px;
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 29, 29, 31;
+  --background: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 29, 29, 31;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #ffffff;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
-  .lg\:flex {
+  .md\:flex {
     display: flex;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:leading-\[58px\] {
+    line-height: 58px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .dark\:bg-monochrome-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
   }
 } 
