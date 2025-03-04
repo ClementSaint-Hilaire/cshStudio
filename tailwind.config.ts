@@ -22,13 +22,13 @@ const config: Config = {
       }
     },
     fontSize: {
-      xs: '0.5625rem',
-      sm: '0.875rem',
-      base: '1rem',
-      lg: '1.25rem',
-      xl: '1.5rem',
-      '2xl': '2.5rem',
-      '3xl': '3.375rem'
+      caption: '0.5625rem',
+      subbody: '0.875rem',
+      body: '1rem',
+      heading: '1.25rem',
+      subtitle: '1.5rem',
+      'title': '2.5rem',
+      'display': '3.375rem'
     },
     fontFamily: {
       'satoshi-variable': 'Satoshi Variable'

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Noise from '@/Animations/Noise'
 
 export const metadata: Metadata = {
   title: 'CSH Studio',
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-monochrome-100 dark:bg-monochrome-900 font-['Satoshi Variable']">
+
         {children}
       </body>
     </html>
