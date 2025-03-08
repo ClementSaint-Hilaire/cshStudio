@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import AnimatedContent from "@/Animations/AnimatedContent";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -23,13 +24,14 @@ const HeroSection = () => {
     CM: 
       "I currently serve as the CM for both Wattiz and Skorpia.fr. While It's not my speciality, I know my way around and know the do & don't.",
     "mom & Dad": 
-      "I do magic stuff on my computer to make the internet look better. <br/> <br/> And yes I ate my vegetables already...",
+      "I do magic stuff on my computer to make the internet look better. <br/>And yes I ate my vegetables already...",
   };
   
   return (
     <div className="justify-center flex flex-col w-full max-w-[1680px] h-[85vh] max-h-[1000px] mx-auto">
       
       <div className="flex flex-col justify-center items-center w-full mx-auto">
+        <AnimatedContent>
 
         <div className="w-full max-w-[600px] flex flex-col items-start gap-[16px] inline-flex">
           <div className="w-full items-center inline-flex overflow-scroll scroll-smooth gap-[32px]">
@@ -52,8 +54,9 @@ const HeroSection = () => {
               className="font-satoshi text-body text-monochrome-800 font-medium leading-[22px]"
               dangerouslySetInnerHTML={{ __html: content[activeSection] }}
             />
+          </div>
+        </AnimatedContent>
 
-        </div>
       </div>
     </div>
   );
