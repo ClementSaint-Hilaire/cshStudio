@@ -27,7 +27,7 @@ const HeroSection = () => {
   };
   
   return (
-    <div className="justify-center flex flex-col w-full max-w-[1680px] h-screen max-h-[1000px] mx-auto">
+    <div className="justify-center flex flex-col w-full max-w-[1680px] h-[85vh] max-h-[1000px] mx-auto">
       
       <div className="flex flex-col justify-center items-center w-full mx-auto">
 

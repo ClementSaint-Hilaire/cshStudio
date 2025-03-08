@@ -1,4 +1,4 @@
-import FAQSection from "@/components/faqSection";
+import BlogSection from "@/components/blogSection";
 import HeroSection from "@/components/heroSection";
 import NewsSection from "@/components/newsSection";
 import ProjectSection from "@/components/projectSection";
@@ -13,6 +13,7 @@ export default function Home() {
       <ProjectSection />
       <ValeursSection />
       <TestimonialsSection />
+      <BlogSection /> 
     </main>
   );
 } 
