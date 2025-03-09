@@ -65,6 +65,11 @@
       "static/chunks/main-app.js",
       "static/css/app/travaux/trott2rue/layout.css",
       "static/chunks/app/travaux/trott2rue/layout.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
     ]
   }
 }

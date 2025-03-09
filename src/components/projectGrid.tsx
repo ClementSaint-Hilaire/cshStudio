@@ -22,7 +22,7 @@ export default function ProjectGrid() {
                 </div>
             </div> 
             <div className="max-w-[1680px] mx-auto">
-                <div className="w-full flex grid grid-cols-3 gap-6">
+                <div className="w-full flex grid md:grid-cols-3 gap-6">
                     {projects.map((project, index) => (
                         <AnimatedContent>
                         <div className="w-full" key={index}>
