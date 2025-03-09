@@ -20,8 +20,11 @@ export default function TestimonialsSection() {
                 <div className="self-stretch bg-white inline-flex flex-col justify-start items-center gap-8">
                     <div className="self-stretch w-full py-16 inline-flex justify-start items-center">
                         <div className="flex-1 inline-flex flex-col justify-center items-start gap-8">
-                            <div className="self-stretch relative justify-start text-monochrome-800 text-display font-medium font-satoshi leading-[65px]">Créons ensemble quelque chose de beau.</div>
+                            <AnimatedContent>
+                                <div className="self-stretch relative justify-start text-monochrome-800 text-display font-medium font-satoshi leading-[65px]">Créons ensemble quelque chose de beau.</div>
+                            </AnimatedContent>
                             <div className="inline-flex justify-start items-start gap-4">
+                                <AnimatedContent>
                                 
                                 <div 
                                     className="relative group"
@@ -64,16 +67,17 @@ export default function TestimonialsSection() {
                                         </a>
                                     </div>
                                 </div>
-
+                                </AnimatedContent>
                             </div>
                         </div>
                         <div className="flex-1 self-stretch flex justify-end items-center">
-                            <MagnetLines/> 
+                                <MagnetLines/> 
                         </div>
                     </div>
                     <div className="self-stretch max-w-[1680px] pb-16 inline-flex justify-between items-start">
-                        <div className="inline-flex flex-col justify-start items-start gap-4">
-                            <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px]">Navigation</div>
+                        <div className="inline-flex flex-col justify-start items-start gap-[16px]">
+                            <AnimatedContent>
+                            <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px] pb-8">Navigation</div>
                             <div className="self-stretch flex flex-col justify-start items-start gap-4">
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Index</div>
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Projets</div>
@@ -82,27 +86,33 @@ export default function TestimonialsSection() {
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">A propos</div>
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Contact</div>
                             </div>
+                            </AnimatedContent>
                         </div>
-                        <div className="inline-flex flex-col justify-start items-start gap-4">
-                            <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px]">Ressources</div>
+                        <div className="inline-flex flex-col justify-start items-start gap-[16px]">
+                            <AnimatedContent>
+                            <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px] pb-8">Ressources</div>
                             <div className="self-stretch flex flex-col justify-start items-start gap-4">
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Resume</div>
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Newsletter</div>
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Serveur Discord</div>
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Blog</div>
                             </div>
+                            </AnimatedContent>
                         </div>
-                        <div className="inline-flex flex-col justify-start items-start gap-4">
-                            <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px]">Contact</div>
+                        <div className="inline-flex flex-col justify-start items-start gap-[16px]">
+                            <AnimatedContent>
+                            <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px] pb-8">Contact</div>
                             <div className="flex flex-col justify-start items-start gap-4">
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Mail</div>
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Linkedin</div>
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Instagram</div>
                                 <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Threads</div>
                             </div>
+                            </AnimatedContent>
                         </div>
+                        <AnimatedContent>
                         <div className="w-[450px] inline-flex flex-col justify-center items-start gap-4">
-                            <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px]">Newsletter</div>
+                            <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px] pb-8">Newsletter</div>
                             <div className="self-stretch p-4 rounded-[999px] border border-monochrome-800 inline-flex justify-center items-center gap-2.5">
                                 <div className="flex-1 relative justify-start text-monochrome-500 text-body font-normal font-satoshi leading-snug">email</div>
                                 <div className="w-6 h-6 relative origin-top-left rounded items-center overflow-hidden">
@@ -112,6 +122,8 @@ export default function TestimonialsSection() {
                                 </div>
                             </div>
                         </div>
+                        </AnimatedContent>
+                        
                     </div>
                     <div className="w-full justify-between items-center inline-flex">
                         <div className="text-monochrome-500 text-subbody font-normal leading-tight"> {new Date().getFullYear()} Clément Saint-Hilaire. All Rights Reserved.</div>
