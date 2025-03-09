@@ -8,10 +8,10 @@ export default function TestimonialsSection() {
                     <h1 className="text-title font-medium font-satoshi leading-[48px] text-monochrome-800">/Temoignages</h1>
                 </AnimatedContent>
 
-                <div className="flex gap-[64px] w-full">
-                    <div className="w-1/3 h-auto gap-[64px]" ></div>
+                <div className="flex flex-col md:flex-row gap-[64px] w-full">
+                    <div className="w-0 md:w-1/3 h-auto gap-[64px]" ></div>
                     
-                    <div className="w-1/3 h-auto gap-[64px] flex flex-col gap-[8px]">
+                    <div className="w-full md:w-1/3 h-auto gap-[64px] flex flex-col gap-[8px]">
                     <AnimatedContent>
 
                         <p className="w-full h-auto text-body font-medium font-satoshi text-monochrome-800">
@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
 
                     </div> 
                     
-                    <div className="w-1/3 h-auto gap-[64px] flex flex-col gap-[8px]">
+                    <div className="w-full md:w-1/3 h-auto gap-[64px] flex flex-col gap-[8px]">
                     <AnimatedContent>
 
                         <p className="w-full h-auto text-body font-medium font-satoshi text-monochrome-800">

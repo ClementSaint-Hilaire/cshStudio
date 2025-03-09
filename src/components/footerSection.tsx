@@ -4,7 +4,7 @@ import AnimatedContent from "@/Animations/AnimatedContent";
 import MagnetLines from "./MagnetLine";
 import { useSpring, animated } from "@react-spring/web";
 
-export default function TestimonialsSection() {
+export default function FooterSection() {
     const [rotateAnimation, api] = useSpring(() => ({
         from: { transform: 'rotate(0deg)' },
         config: { 
@@ -21,9 +21,9 @@ export default function TestimonialsSection() {
                     <div className="self-stretch w-full py-16 inline-flex justify-start items-center">
                         <div className="flex-1 inline-flex flex-col justify-center items-start gap-8">
                             <AnimatedContent>
-                                <div className="self-stretch relative justify-start text-monochrome-800 text-display font-medium font-satoshi leading-[65px]">Créons ensemble quelque chose de beau.</div>
+                                <div className="self-stretch relative justify-start text-monochrome-800 text-subtitle md:text-display font-medium font-satoshi md:leading-[65px]">Créons ensemble quelque chose de beau.</div>
                             </AnimatedContent>
-                            <div className="inline-flex justify-start items-start gap-4">
+                            <div className="flex mx-auto md:mx-0 md:inline-flex justify-center md:justify-start md:items-start gap-4">
                                 <AnimatedContent>
                                 
                                 <div 
@@ -70,11 +70,11 @@ export default function TestimonialsSection() {
                                 </AnimatedContent>
                             </div>
                         </div>
-                        <div className="flex-1 self-stretch flex justify-end items-center">
+                        <div className="hidden md:flex flex-1 self-stretch flex justify-end items-center">
                                 <MagnetLines/> 
                         </div>
                     </div>
-                    <div className="self-stretch max-w-[1680px] pb-16 inline-flex justify-between items-start">
+                    <div className="flex flex-col md:flex-row self-stretch max-w-[1680px] pb-16 md:inline-flex justify-between items-start gap-[24px] md:gap-0">
                         <div className="inline-flex flex-col justify-start items-start gap-[16px]">
                             <AnimatedContent>
                             <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px] pb-8">Navigation</div>
@@ -111,7 +111,7 @@ export default function TestimonialsSection() {
                             </AnimatedContent>
                         </div>
                         <AnimatedContent>
-                        <div className="w-[450px] inline-flex flex-col justify-center items-start gap-4">
+                        <div className="hidden md:flex w-[450px] inline-flex flex-col justify-center items-start gap-4">
                             <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px] pb-8">Newsletter</div>
                             <div className="self-stretch p-4 rounded-[999px] border border-monochrome-800 inline-flex justify-center items-center gap-2.5">
                                 <div className="flex-1 relative justify-start text-monochrome-500 text-body font-normal font-satoshi leading-snug">email</div>

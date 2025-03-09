@@ -1,9 +1,7 @@
-// src/components/navbarSection.tsx
 "use client";
 
 import { useState } from "react";
 import Link from "next/link";
-import AnimatedContent from "@/Animations/AnimatedContent";
 
 export default function NavbarSection() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +11,7 @@ export default function NavbarSection() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-monochrome-100">
+    <nav className="fixed top-0 left-0 w-screen z-50 bg-monochrome-100">
       <div className="flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className="z-20">
@@ -72,7 +70,7 @@ export default function NavbarSection() {
 
       {/* Full Screen Menu */}
       <div 
-        className={`fixed inset-0 bg-monochrome-100 flex items-center justify-center transition-opacity duration-300 ${
+        className={`fixed w-screen inset-0 bg-monochrome-100 flex items-center justify-center transition-opacity duration-300 ${
           isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >

@@ -30,9 +30,9 @@ export default function NewsSection() {
                     });
                 `}} />
 
-                <div className="flex gap-6 relative">
-                    <div className="w-3/4">
-                        <div className="sticky top-8">
+                <div className="flex flex-col md:flex-row gap-6 relative">
+                    <div className="w-full md:w-3/4">
+                        <div className="sticky top-[64px]">
                             <div className="aspect-video w-full bg-monochrome-800 rounded-[5px] mb-4"></div>
                             <div>
                                 <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">Titre du projet</h3>
@@ -41,7 +41,7 @@ export default function NewsSection() {
                         </div>
                     </div>
 
-                    <div className="w-1/4 flex flex-col gap-6">
+                    <div className="w-full md:w-1/4 flex flex-col gap-6">
                         {[1, 2, 3].map((_, index) => (
                             <div key={index} className="flex-shrink-0">
                                 <div className="aspect-square w-full bg-monochrome-800 rounded-[5px] mb-4"></div>

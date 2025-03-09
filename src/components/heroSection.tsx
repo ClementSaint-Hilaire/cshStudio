@@ -28,9 +28,9 @@ const HeroSection = () => {
   };
   
   return (
-    <div className="justify-center flex flex-col w-full max-w-[1680px] h-[85vh] max-h-[1000px] mx-auto">
+    <section className="justify-center flex flex-col w-full max-w-[1680px] h-[85vh] max-h-[1000px] mx-auto">
       
-      <div className="flex flex-col justify-center items-center w-full mx-auto">
+      <div className="flex flex-col justify-center md:items-center w-full mx-auto px-[16px]">
         <AnimatedContent>
 
         <div className="w-full max-w-[600px] flex flex-col items-start gap-[16px] inline-flex">
@@ -58,7 +58,7 @@ const HeroSection = () => {
         </AnimatedContent>
 
       </div>
-    </div>
+    </section>
   );
 };
 
