@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import AnimatedContent from "@/Animations/AnimatedContent";
+import ImageTrail from "@/Animations/ImageTrail";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -28,8 +29,7 @@ const HeroSection = () => {
   };
   
   return (
-    <section className="justify-center flex flex-col w-full max-w-[1680px] h-[85vh] max-h-[1000px] mx-auto">
-      
+    <section className="justify-center flex flex-col w-full max-w-[1680px] h-[85vh] max-h-[1000px] mx-auto">      
       <div className="flex flex-col justify-center md:items-center w-full mx-auto px-[16px]">
         <AnimatedContent>
 
