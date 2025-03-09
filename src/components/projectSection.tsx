@@ -65,14 +65,14 @@ export default function ProjectSection() {
             <div className="max-w-[1680px] mx-auto py-32">
                 <div className="flex justify-between items-end mb-8 px-4 md:px-6 lg:px-8">
                     <h2 className="text-title font-medium font-satoshi text-monochrome-800">/Projets</h2>
-                    <div className="flex items-center gap-2 group cursor-pointer">
+                    <a href="/travaux" className="flex items-center gap-2 group cursor-pointer">
                         <span className="text-subbody font-medium font-satoshi text-monochrome-800">explorer tous les projets</span>
                         <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg" 
                             className="transform transition-transform group-hover:translate-x-1">
                             <path d="M14.3536 4.35355C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464466C10.9763 0.269204 10.6597 0.269204 10.4645 0.464466C10.2692 0.659728 10.2692 0.976311 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53553C10.6597 7.7308 10.9763 7.7308 11.1716 7.53553L14.3536 4.35355ZM0 4.5L14 4.5V3.5L0 3.5L0 4.5Z" 
                             fill="#1D1D1F"/>
                         </svg>
-                    </div>
+                    </a>
                 </div>
 
                 <div className="overflow-x-auto scrollbar-hide" ref={scrollRef}>

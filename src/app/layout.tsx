@@ -14,7 +14,7 @@ const satoshi = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'CSH Studio',
+  title: 'cshStudio',
   description: 'Created with Next.js and TypeScript',
 }
 

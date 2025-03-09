@@ -76,7 +76,7 @@ export default function NavbarSection() {
       >
         <ul className="flex flex-col items-center font-satoshi font-medium">
           <li className="hover:bg-monochrome-200 py-2 px-8 rounded-[5px]"><Link href="/" className="text-monochrome-800 text-body font-satoshi font-medium" onClick={toggleMenu}>Index</Link></li>
-          <li className="hover:bg-monochrome-200 py-2 px-8 rounded-[5px]"><Link href="/project" className="text-monochrome-800 text-body font-satoshi font-medium" onClick={toggleMenu}>Project</Link></li>
+          <li className="hover:bg-monochrome-200 py-2 px-8 rounded-[5px]"><Link href="/travaux" className="text-monochrome-800 text-body font-satoshi font-medium" onClick={toggleMenu}>Project</Link></li>
           <li className="hover:bg-monochrome-200 py-2 px-8 rounded-[5px]"><Link href="/products" className="text-monochrome-800 text-body font-satoshi font-medium" onClick={toggleMenu}>Products</Link></li>
           <li className="hover:bg-monochrome-200 py-2 px-8 rounded-[5px]"><Link href="/blog" className="text-monochrome-800 text-body font-satoshi font-medium" onClick={toggleMenu}>Blog</Link></li>
           <li className="hover:bg-monochrome-200 py-2 px-8 rounded-[5px]"><Link href="/contact" className="text-monochrome-800 text-body font-satoshi font-medium" onClick={toggleMenu}>Contact</Link></li>
