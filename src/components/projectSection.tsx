@@ -12,11 +12,9 @@ interface Project {
 export default function ProjectSection() {
     const scrollRef = useRef<HTMLDivElement>(null);
     const projects: Project[] = [
-        { imageLink: '/projects/1.jpg', category: 'catégorie', width: 315, height: 323 },
-        { imageLink: '/projects/2.jpg', category: 'catégorie', width: 350, height: 463 },
-        { imageLink: '/projects/3.jpg', category: 'catégorie', width: 366, height: 177 },
-        { imageLink: '/projects/4.jpg', category: 'catégorie', width: 561, height: 297 },
-        { imageLink: '/projects/5.jpg', category: 'catégorie', width: 264, height: 416 },
+        { imageLink: '/projets/beauregard2024.webp', category: 'catégorie', width: 333, height: 470 },
+        { imageLink: '/projets/memory-updated.webp', category: 'catégorie', width: 429, height: 600 },
+        { imageLink: '/projets/modern-bauhaus.webp', category: 'catégorie', width: 333, height: 470 },
     ];
 
     useEffect(() => {
