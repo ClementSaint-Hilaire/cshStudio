@@ -5,8 +5,6 @@ import AnimatedContent from '@/Animations/AnimatedContent';
 
 interface Project {
     imageLink: string;
-    name: string;
-    category: string;
     width: number;
     height: number;
 }
@@ -14,11 +12,11 @@ interface Project {
 export default function ProjectSection() {
     const scrollRef = useRef<HTMLDivElement>(null);
     const projects: Project[] = [
-        { imageLink: '/projects/1.jpg', name: 'Titre du projet', category: 'catégorie', width: 315, height: 323 },
-        { imageLink: '/projects/2.jpg', name: 'Titre du projet', category: 'catégorie', width: 350, height: 463 },
-        { imageLink: '/projects/3.jpg', name: 'Titre du projet', category: 'catégorie', width: 366, height: 177 },
-        { imageLink: '/projects/4.jpg', name: 'Titre du projet', category: 'catégorie', width: 561, height: 297 },
-        { imageLink: '/projects/5.jpg', name: 'Titre du projet', category: 'catégorie', width: 264, height: 416 },
+        { imageLink: '/projects/1.jpg', width: 315, height: 323 },
+        { imageLink: '/projects/2.jpg', width: 350, height: 463 },
+        { imageLink: '/projects/3.jpg', width: 366, height: 177 },
+        { imageLink: '/projects/4.jpg', width: 561, height: 297 },
+        { imageLink: '/projects/5.jpg', width: 264, height: 416 },
     ];
 
     useEffect(() => {
@@ -44,20 +42,8 @@ export default function ProjectSection() {
         // Start scrolling animation
         animationFrameId = requestAnimationFrame(scroll);
 
-        // Pause on hover
-        const handleMouseEnter = () => cancelAnimationFrame(animationFrameId);
-        const handleMouseLeave = () => {
-            scrollPosition = scrollContainer.scrollLeft;
-            animationFrameId = requestAnimationFrame(scroll);
-        };
-
-        scrollContainer.addEventListener('mouseenter', handleMouseEnter);
-        scrollContainer.addEventListener('mouseleave', handleMouseLeave);
-
         return () => {
             cancelAnimationFrame(animationFrameId);
-            scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
-            scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
         };
     }, []);
 
@@ -80,19 +66,19 @@ export default function ProjectSection() {
                         <div className="inline-flex gap-4 min-w-full">
                             {/* First set of projects */}
                             {projects.map((project, index) => (
-                                <div key={index} className="flex-none group">
-                                    <div className="relative mb-4 overflow-hidden transition-all duration-500 ease-out shadow-none hover:shadow-[0_15px_45px_rgb(0,0,0,0.2)] transform hover:scale-[1.02]">
+                                <div key={index} className="flex-none">
+                                    <div className="relative mb-4 overflow-hidden transition-all duration-500 ease-out">
                                         <div style={{
                                             width: project.width,
                                             height: project.height,
                                             background: '#1D1D1F',
                                             borderRadius: '5px',
-                                        }} className="transition-opacity duration-300">
+                                        }}>
                                             {project.imageLink && (
                                                 <img 
                                                     src={project.imageLink} 
-                                                    alt={project.name}
-                                                    className="w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                                    alt="Project image"
+                                                    className="w-full h-full object-cover"
                                                 />
                                             )}
                                         </div>
@@ -101,19 +87,19 @@ export default function ProjectSection() {
                             ))}
                             {/* Duplicate set for infinite scroll effect */}
                             {projects.map((project, index) => (
-                                <div key={`duplicate-${index}`} className="flex-none group">
-                                    <div className="relative mb-4 overflow-hidden transition-all duration-500 ease-out shadow-none hover:shadow-[0_15px_45px_rgb(0,0,0,0.2)] transform hover:scale-[1.02]">
+                                <div key={`duplicate-${index}`} className="flex-none">
+                                    <div className="relative mb-4 overflow-hidden transition-all duration-500 ease-out">
                                         <div style={{
                                             width: project.width,
                                             height: project.height,
                                             background: '#1D1D1F',
                                             borderRadius: '5px',
-                                        }} className="transition-opacity duration-300">
+                                        }}>
                                             {project.imageLink && (
                                                 <img 
                                                     src={project.imageLink} 
-                                                    alt={project.name}
-                                                    className="w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                                    alt="Project image"
+                                                    className="w-full h-full object-cover"
                                                 />
                                             )}
                                         </div>
