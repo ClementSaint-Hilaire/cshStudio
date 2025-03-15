@@ -3,6 +3,6 @@
   "/page": "app/page.js",
   "/produits/page": "app/produits/page.js",
   "/travaux/page": "app/travaux/page.js",
-  "/travaux/assoreg/page": "app/travaux/assoreg/page.js",
-  "/travaux/skorpia/page": "app/travaux/skorpia/page.js"
+  "/travaux/skorpia/page": "app/travaux/skorpia/page.js",
+  "/travaux/assoreg/page": "app/travaux/assoreg/page.js"
 }

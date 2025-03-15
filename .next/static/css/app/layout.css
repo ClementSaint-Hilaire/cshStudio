@@ -885,6 +885,9 @@ video {
 .rounded-\[9px\] {
   border-radius: 9px;
 }
+.rounded-\[12px\] {
+  border-radius: 12px;
+}
 .rounded-b-\[9px\] {
   border-bottom-right-radius: 9px;
   border-bottom-left-radius: 9px;

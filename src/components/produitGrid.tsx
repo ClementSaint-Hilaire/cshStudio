@@ -42,8 +42,8 @@ export default function ProduitGrids() {
             <div className="max-w-[1680px] mx-auto">
                 <div className="self-stretch max-w-[1680px] inline-flex flex-col justify-start items-start gap-8 md:gap-16">
                     {products.map((product) => (
-                        <AnimatedContent>
-                        <div key={product.id} className="flex flex-col md:flex-row self-stretch max-w-[1680px] inline-flex justify-start items-start gap-8 md:gap-16">
+                        <AnimatedContent key={product.id}>
+                        <div className="flex flex-col md:flex-row self-stretch max-w-[1680px] inline-flex justify-start items-start gap-8 md:gap-16">
                             <div className="w-full md:w-[650px] h-[300px] md:h-[500px] p-2.5 bg-[#1d1d1f] rounded-[5px]"></div>
                             <div className="flex-1 self-stretch inline-flex flex-col justify-between items-start">
                                 <div className="self-stretch flex flex-col justify-start items-start gap-4">

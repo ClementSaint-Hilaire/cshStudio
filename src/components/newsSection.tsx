@@ -70,12 +70,12 @@ export default function NewsSection() {
                             </div>
                             <div className="flex-shrink-0">
                                 <Image 
-                                            src="/produits/icons.webp"
-                                            alt="Project thumbnail"
-                                            width={1000}
-                                            height={1000}
-                                            className="w-full rounded-[5px] mb-4 object-cover"
-                                        />                                
+                                    src="/produits/icons.webp"
+                                    alt="Project thumbnail"
+                                    width={1000}
+                                    height={1000}
+                                    className="w-full rounded-[5px] mb-4 object-cover"
+                                />                                
                                 <div>
                                     <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">csh Icons</h3>
                                     <p className="text-subbody font-medium font-satoshi text-monochrome-800">/Plus de 1200 icons fait à la mains</p>
@@ -83,12 +83,12 @@ export default function NewsSection() {
                             </div>
                             <div className="flex-shrink-0">
                                 <Image 
-                                            src="/produits/ui-kit.webp"
-                                            alt="Project thumbnail"
-                                            width={1000}
-                                            height={1000}
-                                            className="w-full rounded-[5px] mb-4 object-cover"
-                                        />                                
+                                src="/produits/ui-kit.webp"
+                                alt="Project thumbnail"
+                                width={1000}
+                                height={1000}
+                                className="w-full rounded-[9px] mb-4 object-cover"
+                                />                                
                                 <div>
                                     <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">UI Landing Kit</h3>
                                     <p className="text-subbody font-medium font-satoshi text-monochrome-800">/concevez des landing pages esthétiques simplement</p>

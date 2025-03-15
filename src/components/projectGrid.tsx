@@ -24,8 +24,8 @@ export default function ProjectGrid() {
             <div className="max-w-[1680px] mx-auto">
                 <div className="w-full flex grid md:grid-cols-3 gap-6">
                     {projects.map((project, index) => (
-                        <AnimatedContent>
-                        <div className="w-full" key={index}>
+                        <AnimatedContent key={index}>
+                        <div className="w-full">
                             <div className="aspect-square w-full bg-monochrome-800 rounded-[5px] mb-4"></div>
                             <div>
                                 <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">{project.title}</h3>
