@@ -6,10 +6,13 @@ import HoverScale from '@/Animations/HoverScale';
 
 export default function ProjectGrid() {
     const projects = [
-        { title: "Blablou du projet", category: "catégorie", img: "/produits/discord.webp", src: "#" },
-        { title: "Blablou du projet", category: "catégorie", img: "/placeholder.jpg", src: "#" },
-        { title: "Blablou du projet", category: "catégorie", img: "/placeholder.jpg", src: "#" },
-        { title: "Blablou du projet", category: "catégorie", img: "/placeholder.jpg", src: "#" },
+        { title: "Trott2Rue", category: "Graphic design", img: "/travaux/thumbnails/trott.webp", src: "/travaux/trott2rue" },
+        { title: "Arc Compagny Sum'", category: "Graphic design", img: "/travaux/thumbnails/arc.webp", src: "/travaux/case/arc/arc.pdf" },
+        { title: "Skorpia", category: "Branding", img: "/travaux/thumbnails/skorpia.webp", src: "/travaux/skorpia" },
+        { title: "Assoreg", category: "Branding", img: "/travaux/thumbnails/assoreg.webp", src: "/travaux/assoreg" },
+        { title: "Croissantage.com", category: "Design web", img: "/travaux/thumbnails/croissantage.webp", src: "https://croissantge.com" },
+        { title: "Wattiz", category: "Branding", img: "/travaux/thumbnails/wattiz.webp", src: "#" },
+        { title: "Retro Pizza", category: "Mobile App  ", img: "/travaux/thumbnails/pizza.webp", src: "#" },
     ];
 
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
