@@ -1,15 +1,18 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import AnimatedContent from '@/Animations/AnimatedContent';
+import Image from 'next/image';
+import HoverScale from '@/Animations/HoverScale';
 
 export default function ProjectGrid() {
     const projects = [
-        { title: "Blablou du projet", category: "catégorie" },
-        { title: "Blablou du projet", category: "catégorie" },
-        { title: "Blablou du projet", category: "catégorie" },
-        { title: "Blablou du projet", category: "catégorie" },
-
+        { title: "Blablou du projet", category: "catégorie", img: "/produits/discord.webp", src: "#" },
+        { title: "Blablou du projet", category: "catégorie", img: "/placeholder.jpg", src: "#" },
+        { title: "Blablou du projet", category: "catégorie", img: "/placeholder.jpg", src: "#" },
+        { title: "Blablou du projet", category: "catégorie", img: "/placeholder.jpg", src: "#" },
     ];
+
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
         <section className="w-full px-4 md:px-6 lg:px-8 py-8 md:py-12 bg-monochrome-100">
@@ -25,13 +28,28 @@ export default function ProjectGrid() {
                 <div className="w-full flex grid md:grid-cols-3 gap-6">
                     {projects.map((project, index) => (
                         <AnimatedContent key={index}>
-                        <div className="w-full">
-                            <div className="aspect-square w-full bg-monochrome-800 rounded-[5px] mb-4"></div>
-                            <div>
-                                <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">{project.title}</h3>
-                                <p className="text-subbody font-medium font-satoshi text-monochrome-800">/{project.category}</p>
-                            </div>
-                        </div>
+                            <a 
+                                href={project.src} 
+                                className="w-full"
+                                onMouseEnter={() => setHoveredIndex(index)}
+                                onMouseLeave={() => setHoveredIndex(null)}
+                            >
+                                <div className="aspect-square w-full mb-4 overflow-hidden rounded-[5px]">
+                                    <HoverScale isHovered={hoveredIndex === index}>
+                                        <Image 
+                                            src={project.img} 
+                                            alt={project.title} 
+                                            width={1000} 
+                                            height={1000} 
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </HoverScale>
+                                </div>
+                                <div>
+                                    <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">{project.title}</h3>
+                                    <p className="text-subbody font-medium font-satoshi text-monochrome-800">/{project.category}</p>
+                                </div>
+                            </a>
                         </AnimatedContent>
                     ))}
                 </div>
