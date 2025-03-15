@@ -1,5 +1,6 @@
 "use client";
 import Blur from "@/Animations/Blur";
+import Image from "next/image";
 
 export default function NewsSection() {
     return (
@@ -33,10 +34,16 @@ export default function NewsSection() {
                 <div className="flex flex-col md:flex-row gap-6 relative">
                     <div className="w-full md:w-3/4">
                         <div className="sticky top-[64px]">
-                            <div className="aspect-video w-full bg-monochrome-800 rounded-[5px] mb-4"></div>
+                            <Image 
+                                src="/produits/design-system.webp"
+                                alt="Project thumbnail"
+                                width={1280}
+                                height={720}
+                                className="w-full rounded-[5px] mb-4 aspect-video object-cover"
+                            />
                             <div>
-                                <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">Titre du projet</h3>
-                                <p className="text-subbody font-medium font-satoshi text-monochrome-800">/catégorie</p>
+                                <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">csh Design System</h3>
+                                <p className="text-subbody font-medium font-satoshi text-monochrome-800">/design smarter not harder</p>
                             </div>
                         </div>
                     </div>
@@ -44,24 +51,44 @@ export default function NewsSection() {
                     <div className="w-full md:w-1/4 flex flex-col gap-6">
                     
                             <div className="flex-shrink-0">
-                                <div className="aspect-square w-full bg-monochrome-800 rounded-[5px] mb-4"></div>
+                                <div className="aspect-square w-full bg-monochrome-800 rounded-[5px] mb-4">
+                                    <Image 
+                                        src="/produits/discord.webp"
+                                        alt="Project thumbnail"
+                                        width={1000}
+                                        height={1000}
+                                        className="w-full rounded-[5px] mb-4 object-cover"
+                                    />
+                                </div>
                                 <div>
-                                    <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">Blablou du projet</h3>
-                                    <p className="text-subbody font-medium font-satoshi text-monochrome-800">/catégorie</p>
+                                    <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">csh Discord</h3>
+                                    <p className="text-subbody font-medium font-satoshi text-monochrome-800">/Ensemble, débatons d'actualités technologique & design</p>
                                 </div>
                             </div>
                             <div className="flex-shrink-0">
-                                <div className="aspect-square w-full bg-monochrome-800 rounded-[5px] mb-4"></div>
+                                <Image 
+                                            src="/produits/icons.webp"
+                                            alt="Project thumbnail"
+                                            width={1000}
+                                            height={1000}
+                                            className="w-full rounded-[5px] mb-4 object-cover"
+                                        />                                
                                 <div>
-                                    <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">Blablou du projet</h3>
-                                    <p className="text-subbody font-medium font-satoshi text-monochrome-800">/catégorie</p>
+                                    <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">csh Icons</h3>
+                                    <p className="text-subbody font-medium font-satoshi text-monochrome-800">/Plus de 1200 icons fait à la mains</p>
                                 </div>
                             </div>
                             <div className="flex-shrink-0">
-                                <div className="aspect-square w-full bg-monochrome-800 rounded-[5px] mb-4"></div>
+                                <Image 
+                                            src="/produits/ui-kit.webp"
+                                            alt="Project thumbnail"
+                                            width={1000}
+                                            height={1000}
+                                            className="w-full rounded-[5px] mb-4 object-cover"
+                                        />                                
                                 <div>
-                                    <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">Blablou du projet</h3>
-                                    <p className="text-subbody font-medium font-satoshi text-monochrome-800">/catégorie</p>
+                                    <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">UI Landing Kit</h3>
+                                    <p className="text-subbody font-medium font-satoshi text-monochrome-800">/concevez des landing pages esthétiques simplement</p>
                                 </div>
                             </div>
                     

@@ -38,7 +38,7 @@ export default function FooterSection() {
                                         <animated.div style={rotateAnimation}>
                                             <div className="w-6 h-6 relative rounded overflow-hidden">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.99995 6L15.0001 12L8.99995 18" stroke="#F5F5F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.99995 6L15.0001 12L8.99995 18" stroke="#F5F5F7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                                 </svg>
                                             </div>       
                                         </animated.div>
