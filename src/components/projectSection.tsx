@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import HoverScale from '../Animations/HoverScale';
 
 interface Project {
     imageLink: string;
@@ -11,10 +12,12 @@ interface Project {
 
 export default function ProjectSection() {
     const scrollRef = useRef<HTMLDivElement>(null);
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+    
     const projects: Project[] = [
-        { imageLink: '/projets/beauregard2024.webp', category: 'catégorie', width: 333, height: 470 },
-        { imageLink: '/projets/memory-updated.webp', category: 'catégorie', width: 429, height: 600 },
-        { imageLink: '/projets/modern-bauhaus.webp', category: 'catégorie', width: 333, height: 470 },
+        { imageLink: '/projets/beauregard2024.webp', category: 'catégorie', width: 212, height: 300 },
+        { imageLink: '/projets/memory-updated.webp', category: 'catégorie', width: 286, height: 400 },
+        { imageLink: '/projets/modern-bauhaus.webp', category: 'catégorie', width: 212, height: 300 },
     ];
 
     useEffect(() => {
@@ -23,17 +26,25 @@ export default function ProjectSection() {
 
         let animationFrameId: number;
         let scrollPosition = 0;
-        const scrollSpeed = 0.5; // Pixels per frame
+        const scrollSpeed = 0.5;
 
         const scroll = () => {
+            if (!scrollContainer) return;
+            
             scrollPosition += scrollSpeed;
             
-            // Reset scroll position when reaching the first set of projects
-            if (scrollPosition >= scrollContainer.scrollWidth / 2) {
+            // Get the width of a single set of projects
+            const singleSetWidth = scrollContainer.scrollWidth / 2;
+            
+            // If we've scrolled past the first set
+            if (scrollPosition >= singleSetWidth) {
+                // Reset to the start of the first set
                 scrollPosition = 0;
+                scrollContainer.scrollLeft = scrollPosition;
+            } else {
+                scrollContainer.scrollLeft = scrollPosition;
             }
             
-            scrollContainer.scrollLeft = scrollPosition;
             animationFrameId = requestAnimationFrame(scroll);
         };
 
@@ -52,8 +63,10 @@ export default function ProjectSection() {
 
         return () => {
             cancelAnimationFrame(animationFrameId);
-            scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
-            scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
+            if (scrollContainer) {
+                scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
+                scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
+            }
         };
     }, []);
 
@@ -72,27 +85,34 @@ export default function ProjectSection() {
                     </a>
                 </div>
 
-                <div className="overflow-x-auto scrollbar-hide" ref={scrollRef}>
-                    <div className="inline-flex gap-4 px-4 md:px-6 lg:px-8 min-w-full">
+                <div className="overflow-x-hidden" ref={scrollRef}>
+                    <div className="inline-flex gap-4 px-4 md:px-6 lg:px-8">
                         {/* First set of projects */}
                         {projects.map((project, index) => (
-                            <div key={index} className="flex-none group">
-                                <div className="relative mb-4 overflow-hidden transition-all duration-500 ease-out shadow-none hover:shadow-[0_15px_45px_rgb(0,0,0,0.2)] transform hover:scale-[1.02]">
-                                    <div style={{
-                                        width: project.width,
-                                        height: project.height,
-                                        background: '#1D1D1F',
-                                        borderRadius: '5px',
-                                    }} className="transition-opacity duration-300">
-                                        {project.imageLink && (
-                                            <img 
-                                                src={project.imageLink} 
-                                                alt={project.category}
-                                                className="w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                                            />
-                                        )}
+                            <div 
+                                key={index} 
+                                className="flex-none"
+                                onMouseEnter={() => setHoveredIndex(index)}
+                                onMouseLeave={() => setHoveredIndex(null)}
+                            >
+                                <HoverScale isHovered={hoveredIndex === index}>
+                                    <div className="relative mb-4 overflow-hidden">
+                                        <div style={{
+                                            width: project.width,
+                                            height: project.height,
+                                            background: '#1D1D1F',
+                                            borderRadius: '12px',
+                                        }}>
+                                            {project.imageLink && (
+                                                <img 
+                                                    src={project.imageLink} 
+                                                    alt={project.category}
+                                                    className="w-full h-full object-cover"
+                                                />
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
+                                </HoverScale>
                                 <div className="space-y-1">
                                     <p className="text-subbody font-medium font-satoshi text-monochrome-800">/{project.category}</p>
                                 </div>
@@ -100,23 +120,30 @@ export default function ProjectSection() {
                         ))}
                         {/* Duplicate set for infinite scroll effect */}
                         {projects.map((project, index) => (
-                            <div key={`duplicate-${index}`} className="flex-none group">
-                                <div className="relative mb-4 overflow-hidden transition-all duration-500 ease-out shadow-none hover:shadow-[0_15px_45px_rgb(0,0,0,0.2)] transform hover:scale-[1.02]">
-                                    <div style={{
-                                        width: project.width,
-                                        height: project.height,
-                                        background: '#1D1D1F',
-                                        borderRadius: '5px',
-                                    }} className="transition-opacity duration-300">
-                                        {project.imageLink && (
-                                            <img 
-                                                src={project.imageLink} 
-                                                alt={project.category}
-                                                className="w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                                            />
-                                        )}
+                            <div 
+                                key={`duplicate-${index}`} 
+                                className="flex-none"
+                                onMouseEnter={() => setHoveredIndex(index + projects.length)}
+                                onMouseLeave={() => setHoveredIndex(null)}
+                            >
+                                <HoverScale isHovered={hoveredIndex === index + projects.length}>
+                                    <div className="relative mb-4 overflow-hidden">
+                                        <div style={{
+                                            width: project.width,
+                                            height: project.height,
+                                            background: '#1D1D1F',
+                                            borderRadius: '12px',
+                                        }}>
+                                            {project.imageLink && (
+                                                <img 
+                                                    src={project.imageLink} 
+                                                    alt={project.category}
+                                                    className="w-full h-full object-cover"
+                                                />
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
+                                </HoverScale>
                                 <div className="space-y-1">
                                     <p className="text-subbody font-medium font-satoshi text-monochrome-800">/{project.category}</p>
                                 </div>
@@ -127,4 +154,4 @@ export default function ProjectSection() {
             </div>
         </section>
     );
-} 
+}
