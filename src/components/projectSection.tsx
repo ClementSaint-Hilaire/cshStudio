@@ -4,7 +4,6 @@ import { useEffect, useRef } from 'react';
 
 interface Project {
     imageLink: string;
-    name: string;
     category: string;
     width: number;
     height: number;
@@ -13,11 +12,11 @@ interface Project {
 export default function ProjectSection() {
     const scrollRef = useRef<HTMLDivElement>(null);
     const projects: Project[] = [
-        { imageLink: '/projects/1.jpg', name: 'Titre du projet', category: 'catégorie', width: 315, height: 323 },
-        { imageLink: '/projects/2.jpg', name: 'Titre du projet', category: 'catégorie', width: 350, height: 463 },
-        { imageLink: '/projects/3.jpg', name: 'Titre du projet', category: 'catégorie', width: 366, height: 177 },
-        { imageLink: '/projects/4.jpg', name: 'Titre du projet', category: 'catégorie', width: 561, height: 297 },
-        { imageLink: '/projects/5.jpg', name: 'Titre du projet', category: 'catégorie', width: 264, height: 416 },
+        { imageLink: '/projects/1.jpg', category: 'catégorie', width: 315, height: 323 },
+        { imageLink: '/projects/2.jpg', category: 'catégorie', width: 350, height: 463 },
+        { imageLink: '/projects/3.jpg', category: 'catégorie', width: 366, height: 177 },
+        { imageLink: '/projects/4.jpg', category: 'catégorie', width: 561, height: 297 },
+        { imageLink: '/projects/5.jpg', category: 'catégorie', width: 264, height: 416 },
     ];
 
     useEffect(() => {
@@ -90,14 +89,13 @@ export default function ProjectSection() {
                                         {project.imageLink && (
                                             <img 
                                                 src={project.imageLink} 
-                                                alt={project.name}
+                                                alt={project.category}
                                                 className="w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                                             />
                                         )}
                                     </div>
                                 </div>
                                 <div className="space-y-1">
-                                    <h3 className="text-xl font-medium font-satoshi text-monochrome-800">{project.name}</h3>
                                     <p className="text-subbody font-medium font-satoshi text-monochrome-800">/{project.category}</p>
                                 </div>
                             </div>
@@ -115,14 +113,13 @@ export default function ProjectSection() {
                                         {project.imageLink && (
                                             <img 
                                                 src={project.imageLink} 
-                                                alt={project.name}
+                                                alt={project.category}
                                                 className="w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                                             />
                                         )}
                                     </div>
                                 </div>
                                 <div className="space-y-1">
-                                    <h3 className="text-xl font-medium font-satoshi text-monochrome-800">{project.name}</h3>
                                     <p className="text-subbody font-medium font-satoshi text-monochrome-800">/{project.category}</p>
                                 </div>
                             </div>
