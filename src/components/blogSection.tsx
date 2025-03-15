@@ -22,48 +22,48 @@ export default function TestimonialsSection() {
 
                     <div className="w-full md:w-2/3 h-auto gap-[64px]">
                         <div className="flex flex-col md:grid grid-cols-2 gap-16">
-                            <div className="col-span-1">
+                            <a href="https://medium.com/@clement.sainthilaire.app" target="_blank" className="col-span-1">
                                 <AnimatedContent>
-                                    <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-['Satoshi_Variable'] leading-relaxed mb-2">Grilles vs Listes</div>
+                                    <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-satoshi leading-relaxed mb-2">Grilles vs Listes</div>
                                     <div className="self-stretch h-0 relative ring-1 ring-[#1d1d1f]"></div>
-                                    <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-['Satoshi_Variable'] leading-snug pt-2">Lors de la réalisation d’un projet client, la question de l’affichage de leurs produit s’est posé quant au choix de la disposition en liste ou en grille. Si l’affichage en grille peut paraître évident et plus efficace au premier abord, ce dernier n’est clairement pas parfait et les listes sont en réalités privilégiés sous certaines conditions.</div>
+                                    <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-satoshi leading-snug pt-2">Lors de la réalisation d’un projet client, la question de l’affichage de leurs produit s’est posé quant au choix de la disposition en liste ou en grille. Si l’affichage en grille peut paraître évident et plus efficace au premier abord, ce dernier n’est clairement pas parfait et les listes sont en réalités privilégiés sous certaines conditions.</div>
                                 </AnimatedContent>
-                            </div>
-                            <div className="col-span-1">
+                            </a>
+                            <a href="https://medium.com/@clement.sainthilaire.app/imessage-et-le-chiffrement-quantique-e9747c8d22ad" target="_blank" className="col-span-1">
                             <AnimatedContent>
-                                <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-['Satoshi_Variable'] leading-relaxed mb-2">iMessage et le chiffrement quantique</div>
+                                <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-satoshi leading-relaxed mb-2">iMessage et le chiffrement quantique</div>
                                 <div className="self-stretch h-0 relative ring-1 ring-[#1d1d1f]"></div>
-                                <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-['Satoshi_Variable'] leading-snug pt-2">Découvrez comment Apple à dors et déjà rendu sa messagerie propriétaire sécurisé contre les “menaces” les nouveaux types de cyberattaques que pourrait engendrer les ordinateurs quantiques.</div>
+                                <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-satoshi leading-snug pt-2">Découvrez comment Apple à dors et déjà rendu sa messagerie propriétaire sécurisé contre les “menaces” les nouveaux types de cyberattaques que pourrait engendrer les ordinateurs quantiques.</div>
                             </AnimatedContent>
-                            </div>
-                            <div className="col-span-1">
+                            </a>
+                            <a href="https://medium.com/@clement.sainthilaire.app/arc-browser-why-1fca52271578" target="_blank" className="col-span-1">
                             <AnimatedContent>
-                                <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-['Satoshi_Variable'] leading-relaxed mb-2">L'importance des couleurs dans le design</div>
+                                <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-satoshi leading-relaxed mb-2">La hype de Arc</div>
                                 <div className="self-stretch h-0 relative ring-1 ring-[#1d1d1f]"></div>
-                                <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-['Satoshi_Variable'] leading-snug pt-2">Les couleurs jouent un rôle fondamental dans le design. Elles influencent les émotions et la perception des utilisateurs. Choisir la bonne palette de couleurs peut améliorer l'expérience utilisateur et renforcer l'identité de marque.</div>
+                                <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-satoshi leading-snug pt-2">La plupart des gens confondent souvent la simplicité et la facilité. Pour causes ils se ressemblent.</div>
                             </AnimatedContent>
-                            </div>
-                            <div className="col-span-1">
+                            </a>
+                            <a href="https://medium.com/@clement.sainthilaire.app/la-bento-trend-f3ae36719425" target="_blank" className="col-span-1">
                             <AnimatedContent>
-                                <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-['Satoshi_Variable'] leading-relaxed mb-2">Wtf is a bento in design ?</div>
+                                <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-satoshi leading-relaxed mb-2">Wtf is a bento in design ?</div>
                                 <div className="self-stretch h-0 relative ring-1 ring-[#1d1d1f]"></div>
-                                <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-['Satoshi_Variable'] leading-snug pt-2">Si vous suivez le monde de la tech, vous avez dû être témoin de l’émergence de cette nouvelle mode des bentos. Le bento est un concept simple : il s’agit ni plus ni moins que d'un mode d’organisation d’éléments dans un espace, une technique qui permet de compiler un grand nombre d’informations et de les organiser, sans pour autant se retrouver avec une page dont le “trop” dessert l’objectif dont il a l’origine.</div>
+                                <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-satoshi leading-snug pt-2">Si vous suivez le monde de la tech, vous avez dû être témoin de l’émergence de cette nouvelle mode des bentos. Le bento est un concept simple : il s’agit ni plus ni moins que d'un mode d’organisation d’éléments dans un espace, une technique qui permet de compiler un grand nombre d’informations et de les organiser, sans pour autant se retrouver avec une page dont le “trop” dessert l’objectif dont il a l’origine.</div>
                             </AnimatedContent>
-                            </div>
-                            <div className="col-span-1">
+                            </a>
+                            <a href="https://medium.com/@clement.sainthilaire.app/apple-vision-pro-c1befc5629cb" target="_blank" className="col-span-1">
                             <AnimatedContent>
-                                <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-['Satoshi_Variable'] leading-relaxed mb-2">La vision du futur dans la techno du présent</div>
+                                <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-satoshi leading-relaxed mb-2">La vision du futur dans la techno du présent</div>
                                 <div className="self-stretch h-0 relative ring-1 ring-[#1d1d1f]"></div>
-                                <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-['Satoshi_Variable'] leading-snug pt-2">L’Apple Vision Pro à fait coulé de l’encre à tous les niveaux, de part ses prouesse technologiques, son prix, ses fonctionnalités, l’experiences qu’il procure et celles qu’il promet. </div>
+                                <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-satoshi leading-snug pt-2">L’Apple Vision Pro à fait coulé de l’encre à tous les niveaux, de part ses prouesse technologiques, son prix, ses fonctionnalités, l’experiences qu’il procure et celles qu’il promet. </div>
                             </AnimatedContent>
-                            </div>
-                            <div className="col-span-1">
+                            </a>
+                            <a href="https://medium.com/@clement.sainthilaire.app/pourquoi-vous-navez-rien-compris-%C3%A0-chatgpt-d0a613568c88" target="_blank" className="col-span-1">
                             <AnimatedContent>
-                                <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-['Satoshi_Variable'] leading-relaxed mb-2">L'importance des couleurs dans le design</div>
+                                <div className="self-stretch relative justify-start text-[#1d1d1f] text-xl font-medium font-satoshi leading-relaxed mb-2">Pourquoi vous n’avez rien compris à ChatGPT</div>
                                 <div className="self-stretch h-0 relative ring-1 ring-[#1d1d1f]"></div>
-                                <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-['Satoshi_Variable'] leading-snug pt-2">Les couleurs jouent un rôle fondamental dans le design. Elles influencent les émotions et la perception des utilisateurs. Choisir la bonne palette de couleurs peut améliorer l'expérience utilisateur et renforcer l'identité de marque.</div>
+                                <div className="self-stretch relative justify-start text-[#75757a] text-base font-medium font-satoshi leading-snug pt-2">Les couleurs jouent un rôle fondamental dans le design. Elles influencent les émotions et la perception des utilisateurs. Choisir la bonne palette de couleurs peut améliorer l'expérience utilisateur et renforcer l'identité de marque.</div>
                             </AnimatedContent>
-                            </div>
+                            </a>
                         </div>
                     </div>                    
                 </div>
