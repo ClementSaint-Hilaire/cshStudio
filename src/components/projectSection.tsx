@@ -15,9 +15,9 @@ export default function ProjectSection() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     
     const projects: Project[] = [
-        { imageLink: '/projets/beauregard2024.webp', category: 'catégorie', width: 212, height: 300 },
-        { imageLink: '/projets/memory-updated.webp', category: 'catégorie', width: 286, height: 400 },
-        { imageLink: '/projets/modern-bauhaus.webp', category: 'catégorie', width: 212, height: 300 },
+        { imageLink: '/projets/beauregard2024.webp', category: 'Beauregard', width: 212, height: 300 },
+        { imageLink: '/projets/memory-updated.webp', category: 'Exploration 001', width: 286, height: 400 },
+        { imageLink: '/projets/modern-bauhaus.webp', category: 'Bauhaus', width: 212, height: 300 },
     ];
 
     useEffect(() => {
