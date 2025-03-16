@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import HoverScale from '../Animations/HoverScale';
 
 interface Project {
     imageLink: string;
@@ -103,6 +104,7 @@ export default function ProjectSection() {
                                 onMouseLeave={() => setHoveredIndex(null)}
                             >
                                 <div className="relative mb-4 overflow-hidden">
+                                    <HoverScale isHovered={hoveredIndex === index}>
                                     <div style={{
                                         width: project.width,
                                         height: project.height,
@@ -117,6 +119,7 @@ export default function ProjectSection() {
                                             />
                                         )}
                                     </div>
+                                    </HoverScale>
                                 </div>
                                 <div className="space-y-1">
                                     <p className="text-subbody font-medium font-satoshi text-monochrome-800">/{project.category}</p>
@@ -132,6 +135,7 @@ export default function ProjectSection() {
                                 onMouseLeave={() => setHoveredIndex(null)}
                             >
                                 <div className="relative mb-4 overflow-hidden">
+                                    <HoverScale isHovered={hoveredIndex === index + projects.length}>
                                     <div style={{
                                         width: project.width,
                                         height: project.height,
@@ -142,10 +146,11 @@ export default function ProjectSection() {
                                             <img 
                                                 src={project.imageLink} 
                                                 alt={project.category}
-                                                className="w-full h-full object-cover"
+                                                className="w-full h-full rounded-[5px] object-cover"
                                             />
                                         )}
                                     </div>
+                                    </HoverScale>
                                 </div>
                                 <div className="space-y-1">
                                     <p className="text-subbody font-medium font-satoshi text-monochrome-800">/{project.category}</p>

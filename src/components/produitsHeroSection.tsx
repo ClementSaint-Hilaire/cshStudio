@@ -12,11 +12,15 @@ interface Project {
 export default function ProjectSection() {
     const scrollRef = useRef<HTMLDivElement>(null);
     const projects: Project[] = [
-        { imageLink: '/projects/1.jpg', width: 315, height: 323 },
-        { imageLink: '/projects/2.jpg', width: 350, height: 463 },
-        { imageLink: '/projects/3.jpg', width: 366, height: 177 },
-        { imageLink: '/projects/4.jpg', width: 561, height: 297 },
-        { imageLink: '/projects/5.jpg', width: 264, height: 416 },
+        { imageLink: '/produits/carrousel/01.webp', width: 300, height: 300 },
+        { imageLink: '/produits/carrousel/02.webp', width: 350, height: 350 },
+        { imageLink: '/produits/carrousel/03.webp', width: 444, height: 200 },
+        { imageLink: '/produits/carrousel/3-5.webp', width: 711, height: 400 },
+        { imageLink: '/produits/carrousel/04.webp', width: 250, height: 381 },
+        { imageLink: '/produits/carrousel/05.webp', width: 444, height: 200 },
+        { imageLink: '/produits/carrousel/06.webp', width: 711, height: 400 },
+        { imageLink: '/produits/carrousel/07.webp', width: 897, height: 400 },
+        { imageLink: '/produits/carrousel/09.webp', width: 300, height: 300 },
     ];
 
     useEffect(() => {
@@ -71,14 +75,14 @@ export default function ProjectSection() {
                                         <div style={{
                                             width: project.width,
                                             height: project.height,
-                                            background: '#1D1D1F',
+                                            background: '',
                                             borderRadius: '5px',
                                         }}>
                                             {project.imageLink && (
                                                 <img 
                                                     src={project.imageLink} 
                                                     alt="Project image"
-                                                    className="w-full h-full object-cover"
+                                                    className="w-full h-full object-cover rounded-[5px]"
                                                 />
                                             )}
                                         </div>
