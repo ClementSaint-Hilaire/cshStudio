@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import HoverScale from '../Animations/HoverScale';
 
 interface Project {
     imageLink: string;
@@ -15,9 +14,17 @@ export default function ProjectSection() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     
     const projects: Project[] = [
+        { imageLink: '/projets/hyperion.webp', category: 'Hyperion Cloud', width: 650, height: 366 },
         { imageLink: '/projets/beauregard2024.webp', category: 'Beauregard', width: 212, height: 300 },
         { imageLink: '/projets/memory-updated.webp', category: 'Exploration 001', width: 286, height: 400 },
+        { imageLink: '/projets/hyperion-app.webp', category: 'Hyperion Cloud', width: 300, height: 300 },
+        { imageLink: '/projets/skorpia.webp', category: 'Skorpia', width: 658, height: 370 },
         { imageLink: '/projets/modern-bauhaus.webp', category: 'Bauhaus', width: 212, height: 300 },
+        { imageLink: '/projets/coop-etiquette.webp', category: 'Coop 5pour100', width: 200, height: 200 },
+        { imageLink: '/projets/hyperion-story.webp', category: 'Hyperion Cloud', width: 600, height: 338 },
+        { imageLink: '/projets/assoreg-card.webp', category: 'Assoreg', width: 300, height: 250 },
+        { imageLink: '/projets/cshstudio-wave.webp', category: 'cshStudio', width: 500, height: 450 },
+        { imageLink: '/projets/coop-flag.webp', category: 'Coop 5pour100', width: 400, height: 350 },
     ];
 
     useEffect(() => {
@@ -95,24 +102,22 @@ export default function ProjectSection() {
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
                             >
-                                <HoverScale isHovered={hoveredIndex === index}>
-                                    <div className="relative mb-4 overflow-hidden">
-                                        <div style={{
-                                            width: project.width,
-                                            height: project.height,
-                                            background: '#1D1D1F',
-                                            borderRadius: '12px',
-                                        }}>
-                                            {project.imageLink && (
-                                                <img 
-                                                    src={project.imageLink} 
-                                                    alt={project.category}
-                                                    className="w-full h-full object-cover"
-                                                />
-                                            )}
-                                        </div>
+                                <div className="relative mb-4 overflow-hidden">
+                                    <div style={{
+                                        width: project.width,
+                                        height: project.height,
+                                        background: '#1D1D1F',
+                                        borderRadius: '12px',
+                                    }}>
+                                        {project.imageLink && (
+                                            <img 
+                                                src={project.imageLink} 
+                                                alt={project.category}
+                                                className="w-full h-full rounded-[5px] object-cover"
+                                            />
+                                        )}
                                     </div>
-                                </HoverScale>
+                                </div>
                                 <div className="space-y-1">
                                     <p className="text-subbody font-medium font-satoshi text-monochrome-800">/{project.category}</p>
                                 </div>
@@ -126,24 +131,22 @@ export default function ProjectSection() {
                                 onMouseEnter={() => setHoveredIndex(index + projects.length)}
                                 onMouseLeave={() => setHoveredIndex(null)}
                             >
-                                <HoverScale isHovered={hoveredIndex === index + projects.length}>
-                                    <div className="relative mb-4 overflow-hidden">
-                                        <div style={{
-                                            width: project.width,
-                                            height: project.height,
-                                            background: '#1D1D1F',
-                                            borderRadius: '12px',
-                                        }}>
-                                            {project.imageLink && (
-                                                <img 
-                                                    src={project.imageLink} 
-                                                    alt={project.category}
-                                                    className="w-full h-full object-cover"
-                                                />
-                                            )}
-                                        </div>
+                                <div className="relative mb-4 overflow-hidden">
+                                    <div style={{
+                                        width: project.width,
+                                        height: project.height,
+                                        background: '#1D1D1F',
+                                        borderRadius: '12px',
+                                    }}>
+                                        {project.imageLink && (
+                                            <img 
+                                                src={project.imageLink} 
+                                                alt={project.category}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        )}
                                     </div>
-                                </HoverScale>
+                                </div>
                                 <div className="space-y-1">
                                     <p className="text-subbody font-medium font-satoshi text-monochrome-800">/{project.category}</p>
                                 </div>
