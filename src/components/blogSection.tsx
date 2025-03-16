@@ -111,37 +111,37 @@ export default function TestimonialsSection() {
             href: "https://medium.com/@clement.sainthilaire.app",
             title: "Grilles vs Listes",
             description: "Lors de la réalisation d'un projet client, la question de l'affichage de leurs produit s'est posé quant au choix de la disposition en liste ou en grille. Si l'affichage en grille peut paraître évident et plus efficace au premier abord, ce dernier n'est clairement pas parfait et les listes sont en réalités privilégiés sous certaines conditions.",
-            imageUrl: "/travaux/thumbnails/arc.webp"
+            imageUrl: "/blog/listvsgrille.webp"
         },
         {
             href: "https://medium.com/@clement.sainthilaire.app/imessage-et-le-chiffrement-quantique-e9747c8d22ad",
             title: "iMessage et le chiffrement quantique",
             description: "Découvrez comment Apple à dors et déjà rendu sa messagerie propriétaire sécurisé contre les \"menaces\" les nouveaux types de cyberattaques que pourrait engendrer les ordinateurs quantiques.",
-            imageUrl: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*fQ5b4HF9dxhvyWt8B401BA.png"
+            imageUrl: "/blog/imessage.webp"
         },
         {
             href: "https://medium.com/@clement.sainthilaire.app/arc-browser-why-1fca52271578",
             title: "La hype de Arc",
             description: "La plupart des gens confondent souvent la simplicité et la facilité. Pour causes ils se ressemblent.",
-            imageUrl: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*XQvtZ-_oSyw4tODZnKqXHw.png"
+            imageUrl: "/blog/arc.webp"
         },
         {
             href: "https://medium.com/@clement.sainthilaire.app/la-bento-trend-f3ae36719425",
             title: "Wtf is a bento in design ?",
             description: "Si vous suivez le monde de la tech, vous avez dû être témoin de l'émergence de cette nouvelle mode des bentos. Le bento est un concept simple : il s'agit ni plus ni moins que d'un mode d'organisation d'éléments dans un espace, une technique qui permet de compiler un grand nombre d'informations et de les organiser, sans pour autant se retrouver avec une page dont le \"trop\" dessert l'objectif dont il a l'origine.",
-            imageUrl: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*fgQVBxp8pDzXjKZc4Tg4GA.png"
+            imageUrl: "/blog/bento.webp"
         },
         {
             href: "https://medium.com/@clement.sainthilaire.app/apple-vision-pro-c1befc5629cb",
             title: "La vision du futur dans la techno du présent",
             description: "L'Apple Vision Pro à fait coulé de l'encre à tous les niveaux, de part ses prouesse technologiques, son prix, ses fonctionnalités, l'experiences qu'il procure et celles qu'il promet.",
-            imageUrl: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YAqD5_kZ1LpTwz7pYLQT9g.png"
+            imageUrl: "/blog/vision.webp"
         },
         {
             href: "https://medium.com/@clement.sainthilaire.app/pourquoi-vous-navez-rien-compris-%C3%A0-chatgpt-d0a613568c88",
             title: "Pourquoi vous n'avez rien compris à ChatGPT",
             description: "Les couleurs jouent un rôle fondamental dans le design. Elles influencent les émotions et la perception des utilisateurs. Choisir la bonne palette de couleurs peut améliorer l'expérience utilisateur et renforcer l'identité de marque.",
-            imageUrl: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*qL_OWcH-l4zqHBmm4HkHUg.png"
+            imageUrl: "/blog/chatgpt.webp"
         }
     ];
 

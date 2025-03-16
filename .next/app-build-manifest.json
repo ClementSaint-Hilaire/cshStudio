@@ -11,16 +11,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/produits/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/produits/layout.js"
-    ],
-    "/produits/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/produits/page.js"
-    ],
     "/travaux/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -31,40 +21,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/travaux/page.js"
     ],
-    "/travaux/skorpia/layout": [
+    "/produits/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/travaux/skorpia/layout.js"
+      "static/chunks/app/produits/layout.js"
     ],
-    "/travaux/skorpia/page": [
+    "/produits/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/travaux/skorpia/page.js"
-    ],
-    "/travaux/assoreg/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/travaux/assoreg/layout.js"
-    ],
-    "/travaux/assoreg/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/travaux/assoreg/page.js"
-    ],
-    "/travaux/trott2rue/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/travaux/trott2rue/layout.js"
-    ],
-    "/travaux/trott2rue/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/travaux/trott2rue/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/produits/page.js"
     ]
   }
 }

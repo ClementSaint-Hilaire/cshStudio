@@ -7,9 +7,7 @@ export default function Home() {
   return (
     <main className="relative h-screen w-screen bg-monochrome-100">
       <NavbarSection />
-      <ProduitsHeroSection />
-      <ProduitGrids/>
-      <FooterSection />
+    
     </main>
   );
 } 

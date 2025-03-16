@@ -74,13 +74,13 @@ export default function NavbarSection() {
           isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
-        <ul className="flex flex-col items-center font-satoshi font-medium">
-          <li className="hover:bg-monochrome-200 py-2 px-8 rounded-[5px]"><Link href="/" className="text-monochrome-800 text-body font-satoshi font-medium" onClick={toggleMenu}>Index</Link></li>
-          <li className="hover:bg-monochrome-200 py-2 px-8 rounded-[5px]"><Link href="/travaux" className="text-monochrome-800 text-body font-satoshi font-medium" onClick={toggleMenu}>Travaux</Link></li>
-          <li className="hover:bg-monochrome-200 py-2 px-8 rounded-[5px]"><Link href="/produits" className="text-monochrome-800 text-body font-satoshi font-medium" onClick={toggleMenu}>Produits</Link></li>
-          <li className="hover:bg-monochrome-200 py-2 px-8 rounded-[5px]"><Link href="/blog" className="text-monochrome-800 text-body font-satoshi font-medium" onClick={toggleMenu}>Blog</Link></li>
-          <li className="hover:bg-monochrome-200 py-2 px-8 rounded-[5px]"><Link href="/contact" className="text-monochrome-800 text-body font-satoshi font-medium" onClick={toggleMenu}>Contact</Link></li>
-        </ul>
+        <div className="flex flex-col items-center font-satoshi font-medium">
+          <a href="/" className="hover:bg-monochrome-200 flex justify-center items-center py-2 px-8 rounded-[5px] text-monochrome-800 text-body font-satoshi font-medium block w-full" onClick={toggleMenu}>Index</a>
+          <a href="/travaux" className="hover:bg-monochrome-200 flex justify-center items-center py-2 px-8 rounded-[5px] text-monochrome-800 text-body font-satoshi font-medium block w-full" onClick={toggleMenu}>Travaux</a>
+          <a href="/produits" className="hover:bg-monochrome-200 flex justify-center items-center py-2 px-8 rounded-[5px] text-monochrome-800 text-body font-satoshi font-medium block w-full" onClick={toggleMenu}>Produits</a>
+          <a href="https://medium.com/@clement.sainthilaire.app" target="_blank" className="hover:bg-monochrome-200 flex justify-center items-center py-2 px-8 rounded-[5px] text-monochrome-800 text-body font-satoshi font-medium block w-full" onClick={toggleMenu}>Blog</a>
+          <a href="/contact" className="hover:bg-monochrome-200 flex justify-center items-center py-2 px-8 rounded-[5px] text-monochrome-800 text-body font-satoshi font-medium block w-full" onClick={toggleMenu}>Contact</a>
+        </div>
       </div>
     </nav>
   );
