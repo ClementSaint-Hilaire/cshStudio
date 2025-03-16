@@ -1,6 +1,5 @@
 "use client";
 import AnimatedContent from "@/Animations/AnimatedContent";
-import { useSpring, animated } from "@react-spring/web";
 
 export default function ContactSection() {
     return (
@@ -9,10 +8,17 @@ export default function ContactSection() {
             <div className="w-full mt-32 flex max-w-[1680px] justify-start items-start gap-4">
                     <div className="hidden md:flex w-0 w-1/2"></div>
                     <div className="flex w-full md:w-1/2 flex-col justify-start items-start gap-4">
-                        <AnimatedContent direction="vertical" distance={20} delay={200}>
-                                <div className="self-stretch justify-start text-monochrome-800 text-title md:text-display font-medium font-satoshi leading-[40px] md:leading-[65px]">Ensemble, créons quelque chose de beau.</div>
-                                <div className="self-stretch justify-start text-monochrome-500 text-body font-medium font-satoshi leading-relaxed">L'univers cshStudio comprend une suite d'outils conçus pour élever votre créativité. Design System, UI Kit, Icons, Templates, … Chaque produit incarne notre exigence du détail et notre approche minimaliste, pour des expériences à la fois élégantes et percutantes.</div>
-                        </AnimatedContent>
+                    <AnimatedContent direction="vertical" distance={20} delay={200}>
+                        <div className="flex items-center gap-2">
+                            <div className="w-3 h-3 rounded-[99px] bg-[#b96210b3] shadow-[#b96210b3] shadow-glow pulse-animation"></div>
+                            <span className="text-monochrome-500 text-body font-medium font-satoshi">1 place disponible à partir du 28/04/2025</span>
+                        </div>
+                    </AnimatedContent>
+
+                    <AnimatedContent direction="vertical" distance={20} delay={200}>
+                        <div className="self-stretch justify-start text-monochrome-800 text-title md:text-display font-medium font-satoshi leading-[40px] md:leading-[65px] mb-4">Ensemble, créons quelque chose de beau.</div>
+                        <div className="self-stretch justify-start text-monochrome-500 text-body font-medium font-satoshi leading-relaxed">L'univers cshStudio comprend une suite d'outils conçus pour élever votre créativité. Design System, UI Kit, Icons, Templates, … Chaque produit incarne notre exigence du détail et notre approche minimaliste, pour des expériences à la fois élégantes et percutantes.</div>
+                    </AnimatedContent>
                     </div>
             </div>
 
@@ -58,6 +64,28 @@ export default function ContactSection() {
                 <div className="flex w-1/3"></div>
                 <div className="flex w-1/3"></div>
             </div>
+
+            <style jsx global>{`
+                .shadow-glow {
+                    box-shadow: 0 0 10px rgba(185, 98, 16, 0.7);
+                }
+                
+                @keyframes pulse {
+                    0% {
+                        box-shadow: 0 0 0 0 rgba(185, 98, 16, 0.7);
+                    }
+                    70% {
+                        box-shadow: 0 0 0 10px rgba(185, 98, 16, 0);
+                    }
+                    100% {
+                        box-shadow: 0 0 0 0 rgba(185, 98, 16, 0);
+                    }
+                }
+                
+                .pulse-animation {
+                    animation: pulse 2s infinite;
+                }
+            `}</style>
         </div>
     );
 }
