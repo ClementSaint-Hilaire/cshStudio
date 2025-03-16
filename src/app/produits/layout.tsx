@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact - cshStudio',
+  title: 'Produits - cshStudio',
   description: 'Created with Next.js and TypeScript',
 }
 

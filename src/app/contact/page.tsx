@@ -1,15 +1,12 @@
-import FooterSection from "@/components/footerSection";
+"use client";
 import NavbarSection from "@/components/navbarSection";
-import ProduitsHeroSection from "@/components/produitsHeroSection";
-import ProduitGrids from "@/components/produitGrid";
+import ContactSection from "@/components/contactSection";
 
 export default function Home() {
   return (
     <main className="relative h-screen w-screen bg-monochrome-100">
       <NavbarSection />
-      <ProduitsHeroSection />
-      <ProduitGrids/>
-      <FooterSection />
+      <ContactSection />
     </main>
   );
 } 
