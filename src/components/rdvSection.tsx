@@ -33,7 +33,7 @@ export default function RdvSection() {
       />
       <button 
         onClick={openCalendly}
-        className="cursor-pointer text-monochrome-200 text-body font-medium font-satoshi leading-relaxed bg-monochrome-800 p-2 rounded-[9px]"
+        className="cursor-pointer text-monochrome-200 text-body font-medium font-satoshi leading-relaxed bg-monochrome-800 py-2 px-4 rounded-[9px] transition-all duration-500 ease-in-outs hover:bg-monochrome-600"
       >
         Prendre rendez-vous
       </button>
