@@ -1,8 +1,16 @@
-// src/components/rdvSection.tsx
 "use client";
 
 import React from "react";
 import Script from "next/script";
+
+// Add Calendly interface to Window object
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (options: { url: string }) => void;
+    };
+  }
+}
 
 export default function RdvSection() {
   const openCalendly = () => {
