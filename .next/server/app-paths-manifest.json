@@ -1,6 +1,6 @@
 {
   "/page": "app/page.js",
-  "/travaux/page": "app/travaux/page.js",
   "/contact/page": "app/contact/page.js",
+  "/travaux/page": "app/travaux/page.js",
   "/travaux/skorpia/page": "app/travaux/skorpia/page.js"
 }
