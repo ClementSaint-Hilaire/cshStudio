@@ -1,0 +1,34 @@
+// src/components/rdvSection.tsx
+"use client";
+
+import React from "react";
+import Script from "next/script";
+
+export default function RdvSection() {
+  const openCalendly = () => {
+    if (typeof window !== "undefined" && window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/clement-sainthilaire-app/30min?hide_gdpr_banner=1&text_color=757575&primary_color=1d1d1f'
+      });
+    }
+  };
+
+  return (
+    <>
+      <Script 
+        src="https://assets.calendly.com/assets/external/widget.js"
+        strategy="lazyOnload"
+      />
+      <link 
+        href="https://assets.calendly.com/assets/external/widget.css" 
+        rel="stylesheet" 
+      />
+      <button 
+        onClick={openCalendly}
+        className="cursor-pointer text-monochrome-200 text-body font-medium font-satoshi leading-relaxed bg-monochrome-800 p-2 rounded-[5px]"
+      >
+        Prendre rendez-vous
+      </button>
+    </>
+  );
+}
