@@ -1,6 +1,8 @@
 "use client";
 import AnimatedContent from "@/Animations/AnimatedContent";
 import RdvSection from "@/components/rdvSection";
+import ShinyText from "@/Animations/ShinnyText";
+
 
 export default function ContactSection() {
     return (
@@ -12,7 +14,7 @@ export default function ContactSection() {
                     <AnimatedContent direction="vertical" distance={20} delay={200}>
                         <div className="flex items-center gap-2">
                             <div className="w-3 h-3 rounded-[99px] bg-[#10b981b3] shadow-[#10b981b3] shadow-glow pulse-animation"></div>
-                            <span className="text-monochrome-500 text-body font-medium font-satoshi">1 place disponible à partir du 28/04/2025</span>
+                            <ShinyText text="1 place disponible à partir du 28/04/2025" disabled={false} speed={4} className='text-monochrome-500 text-body font-medium font-satoshi' />
                         </div>
                     </AnimatedContent>
 
