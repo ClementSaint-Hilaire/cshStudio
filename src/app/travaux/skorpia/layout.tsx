@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Skorpia - cshStudio',
-  description: 'Created with Next.js and TypeScript',
+  description: 'Héberger. Innover. Connecter.',
 }
 
 export default function SkorpiaLayout({

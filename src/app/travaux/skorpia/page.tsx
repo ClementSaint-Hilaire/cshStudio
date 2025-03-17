@@ -96,6 +96,12 @@ export default function Page() {
   return (
     <div className="flex flex-col md:flex-row w-full max-w-[1680px] mx-auto gap-[32px] px-[16px] py-[50px] md:pt-0">
       <div className="flex flex-col w-full mt-[70px] md:mt-[70px] md:w-1/3">
+        <div className="flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6667 9.99884L3.33325 9.99883M3.33325 9.99883L8.33335 14.9988M3.33325 9.99883L8.33335 4.99884" stroke="#75757A" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          <p className="text-monochrome-500 font-caption font-medium">retour</p>
+        </div>
         <FAQAccordion/>
       </div>
       <div className="flex flex-col w-full pt-[70px] md:w-2/3">
