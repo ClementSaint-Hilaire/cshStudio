@@ -11,9 +11,9 @@ interface HoverImageLinkProps {
 }
 
 const SPRING_CONFIG = {
-    mass: 5,
-    tension: 350,
-    friction: 40
+    mass: 1,
+    tension: 1,
+    friction: 1
 };
 
 const HoverImageLink: React.FC<HoverImageLinkProps> = ({ href, title, description, imageUrl }) => {

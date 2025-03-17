@@ -1,7 +1,9 @@
 "use client";
+import React from 'react';
 import AnimatedContent from "@/Animations/AnimatedContent";
 import RdvSection from "@/components/rdvSection";
 import ShinyText from "@/Animations/ShinnyText";
+import LetterByLetterHoverEffect from "@/Animations/LetterByLetterHover";
 
 
 export default function ContactSection() {
@@ -46,10 +48,10 @@ export default function ContactSection() {
                     <div className="flex w-1/2 md:w-1/3 flex-col justify-start items-start gap-2">
                         <AnimatedContent direction="vertical" distance={20} delay={600}>
                         <div className="flex flex-col gap-3">
-                            <a href="https://discord.gg/EPBXReEWak" target="_blank" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed mb-3 md:mb-0">→ Discord communautaire</a>
-                            <a href="https://www.figma.com/@cshstudio" target="_blank" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed mb-3 md:mb-0">→ Figma</a>
-                            <a href="https://medium.com/@clement.sainthilaire.app" target="_blank" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed mb-3 md:mb-0">→ Blog</a>
-                            <a href="https://csh.beehiiv.com/subscribe" target="_blank" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed mb-3 md:mb-0">→ Newsletter</a>   
+                            <a href="https://discord.gg/EPBXReEWak" target="_blank" className="text-monochrome-500 text-body font-medium h-8 font-satoshi leading-relaxed mb-3 md:mb-0"><LetterByLetterHoverEffect text="→ Discord communautaire" /></a>
+                            <a href="https://www.figma.com/@cshstudio" target="_blank" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed mb-3 md:mb-0"><LetterByLetterHoverEffect text="→ Figma" /></a>
+                            <a href="https://medium.com/@clement.sainthilaire.app" target="_blank" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed mb-3 md:mb-0"><LetterByLetterHoverEffect text="→ Blog" /></a>
+                            <a href="https://csh.beehiiv.com/subscribe" target="_blank" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed mb-3 md:mb-0"><LetterByLetterHoverEffect text="→ Newsletter" /></a>   
                         </div>
                     </AnimatedContent>
                     </div>
