@@ -1,7 +1,7 @@
 {
   "/page": "app/page.js",
   "/travaux/page": "app/travaux/page.js",
-  "/travaux/assoreg/page": "app/travaux/assoreg/page.js",
   "/services/page": "app/services/page.js",
-  "/travaux/skorpia/page": "app/travaux/skorpia/page.js"
+  "/travaux/skorpia/page": "app/travaux/skorpia/page.js",
+  "/travaux/assoreg/page": "app/travaux/assoreg/page.js"
 }
