@@ -24,7 +24,7 @@ export default function ProjectGrid() {
                     <div className="self-stretch h-0 relative ring-[1.50px] ring-monochrome-800"></div>            
                 </div>
                 <div className="self-stretch max-w-[1680px] py-8 inline-flex justify-start items-end gap-8">
-                    <div className="relative justify-start text-monochrome-800 text-[40px] font-medium font-satoshi leading-[48px]">/Tous les cases</div>
+                    <div id="projectGridTitle" className="relative justify-start text-monochrome-800 text-[40px] font-medium font-satoshi leading-[48px]">/Tous les cases</div>
                 </div>
             </div> 
             <div className="max-w-[1680px] mx-auto">
