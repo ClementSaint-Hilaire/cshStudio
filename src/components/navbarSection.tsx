@@ -95,6 +95,7 @@ export default function NavbarSection() {
           <a href="/" className="hover:bg-monochrome-200 flex justify-center items-center py-2 px-8 rounded-[5px] text-monochrome-800 text-body font-satoshi font-medium block w-full" onClick={toggleMenu}>Index</a>
           <a href="/travaux" className="hover:bg-monochrome-200 flex justify-center items-center py-2 px-8 rounded-[5px] text-monochrome-800 text-body font-satoshi font-medium block w-full" onClick={toggleMenu}>Travaux</a>
           <a href="/produits" className="hover:bg-monochrome-200 flex justify-center items-center py-2 px-8 rounded-[5px] text-monochrome-800 text-body font-satoshi font-medium block w-full" onClick={toggleMenu}>Produits</a>
+          <a href="/services" className="hover:bg-monochrome-200 flex justify-center items-center py-2 px-8 rounded-[5px] text-monochrome-800 text-body font-satoshi font-medium block w-full" onClick={toggleMenu}>Services</a>
           <a href="https://medium.com/@clement.sainthilaire.app" target="_blank" className="hover:bg-monochrome-200 flex justify-center items-center py-2 px-8 rounded-[5px] text-monochrome-800 text-body font-satoshi font-medium block w-full" onClick={toggleMenu}>Blog</a>
           <a href="/contact" className="hover:bg-monochrome-200 flex justify-center items-center py-2 px-8 rounded-[5px] text-monochrome-800 text-body font-satoshi font-medium block w-full" onClick={toggleMenu}>Contact</a>
         </div>
