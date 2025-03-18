@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import AnimatedContent from "@/Animations/AnimatedContent";
-import ImageTrail from "@/Animations/ImageTrail";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -10,22 +9,20 @@ const HeroSection = () => {
 
   const content: { [key: string]: string } = {
     "For anyone" : 
-      `<span>Hello there, I'm 
+      `<span>Bien le bonjour, je suis 
       <span style="color: #0a84ff;">Clément Saint-Hilaire</span> 
-      a french 
-      digital creator who cares about making beautiful
-      things that help people.
+      un créateur digital français soucieux de concevoir de belles choses qui aident les gens. </br> <span style="color: #ffffff;">.</span> 
       </span>`,
     designer:
-      "I'm a systems thinker with a high bar for quality. From process to pixels, I'll collaborate with you, learn from you, and help make something we're proud of.",
+      "Je suis un penseur systémique avec des exigences élevées en matière de qualité. Du processus aux pixels, je collaborerai avec vous, j’apprendrai de vous et je contribuerai à créer quelque chose dont nous serons fiers.",
     developer:
-      `<span>I'm {highly_technical} and while (I'm ≠ engineer) I know my way /around & can speak "fluently" with you; I built (this.site) but feel free to visit my <a href="https://github.com/ClementSaint-Hilaire"><span style="color: #0a84ff;">[Github]</span></a>.</span>`,
+      `<span>Formé au développement, je suis {highly_technical}. Sans être ingénieur, je maîtrise le vocabulaire technique et peux échanger /aisément avec vous; J'ai codé (this.site), mais consultez librement mon <a href="https://github.com/ClementSaint-Hilaire"><span style="color: #0a84ff;">[Github]</span></a>.</span>`,
     recruiters:
-      `<span>I'm a french designer with 4 years of experience accross brand & products, at compagny large and small. You can download my resume  <a href="/home/resume_Clement_SAINT-HILAIRE.pdf"><span style="color: #0a84ff;">here</span></a>.</span>`,
+      `<span>Je suis un designer français avec 4 ans d'expérience en branding, en UI/UX et en design graphique aussi bien en startup qu'en grande entreprise. Vous pouvez télécharger mon CV <a href="CV-clement-saint-hilaire.pdf"><span style="color: #0a84ff;">ici</span></a>.</span>`,
     CM: 
-      "I currently serve as the CM for both Wattiz and Skorpia.fr. While It's not my speciality, I know my way around and know the do & don't.",
+      'Je suis actuellement CM pour <a href="https://www.instagram.com/wattiz_/" target="_blank"><span style="color: #0a84ff;">Wattiz</span></a> et <a href="https://www.instagram.com/skorpia_fr/" target="_blank"><span style="color: #0a84ff;">Skorpia.fr</span></a>. Ce n’est pas ma spécialité, mais je sais m’y retrouver et connais les bonnes pratiques. </br> <span style="color: #ffffff;">.</span>',
     "mom & Dad": 
-      "I do magic stuff on my computer to make the internet look better. <br/>And yes I ate my vegetables already...",
+      'Je fais de la magie sur mon ordinateur pour rendre Internet plus beau. </br>Et oui, j’ai déjà mangé mes légumes… </br> <span style="color: #ffffff;">.</span>',
   };
   
   return (
