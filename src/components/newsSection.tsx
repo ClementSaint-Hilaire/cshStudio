@@ -38,7 +38,7 @@ export default function NewsSection() {
 
                 <div className="flex flex-col md:flex-row gap-6 relative">
                     <div className="w-full md:w-3/4">
-                        <div className="sticky top-[64px]">
+                        <div className="sticky top-[16px]">
                             <div 
                                 className="overflow-hidden rounded-[5px] mb-4"
                                 onMouseEnter={() => setHoveredIndex(0)}
