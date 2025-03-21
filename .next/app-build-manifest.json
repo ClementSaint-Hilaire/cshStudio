@@ -6,16 +6,6 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/contact/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contact/layout.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
-    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -31,55 +21,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/travaux/page.js"
     ],
-    "/travaux/skorpia/layout": [
+    "/travaux/radionaut/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/travaux/skorpia/layout.js"
+      "static/chunks/app/travaux/radionaut/layout.js"
     ],
-    "/travaux/skorpia/page": [
+    "/travaux/radionaut/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/travaux/skorpia/page.js"
+      "static/chunks/app/travaux/radionaut/page.js"
     ],
-    "/travaux/trott2rue/layout": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/travaux/trott2rue/layout.js"
-    ],
-    "/travaux/trott2rue/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/travaux/trott2rue/page.js"
-    ],
-    "/produits/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/produits/layout.js"
-    ],
-    "/produits/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/produits/page.js"
-    ],
-    "/services/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/services/layout.js"
-    ],
-    "/services/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/services/page.js"
-    ],
-    "/travaux/assoreg/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/travaux/assoreg/layout.js"
-    ],
-    "/travaux/assoreg/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/travaux/assoreg/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
