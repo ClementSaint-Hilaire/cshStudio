@@ -8,6 +8,9 @@ const features = [
   { link: "/travaux/case/radionaut/3.webp", id: 3, isFullWidth: false },
   { link: "/travaux/case/radionaut/4.webp", id: 4, isFullWidth: false },
   { link: "/travaux/case/radionaut/5.webp", id: 5, isFullWidth: false },
+  { link: "/travaux/case/radionaut/6.webp", id: 6, isFullWidth: false },
+  { link: "/travaux/case/radionaut/7.webp", id: 7, isFullWidth: false },
+
 ];
 
 const FAQAccordion = () => {
