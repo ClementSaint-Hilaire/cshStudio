@@ -6,6 +6,7 @@ import HoverScale from '@/Animations/HoverScale';
 
 export default function ProjectGrid() {
     const projects = [
+        { title: "Radionaut", category: "App design", img: "/travaux/thumbnails/radionaut.webp", src: "/travaux/radionaut" },
         { title: "Trott2Rue", category: "Graphic design", img: "/travaux/thumbnails/trott.webp", src: "/travaux/trott2rue" },
         { title: "Arc Compagny Sum'", category: "Graphic design", img: "/travaux/thumbnails/arc.webp", src: "/travaux/case/arc/arc.pdf" },
         { title: "Skorpia", category: "Branding", img: "/travaux/thumbnails/skorpia.webp", src: "/travaux/skorpia" },

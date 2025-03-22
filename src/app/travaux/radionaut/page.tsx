@@ -4,8 +4,6 @@ import { useState } from "react";
 
 const features = [
   { link: "/travaux/case/radionaut/1.webp", id: 1, isFullWidth: true },
-  { link: "/travaux/case/radionaut/2.webp", id: 2, isFullWidth: false },
-  { link: "/travaux/case/radionaut/3.webp", id: 3, isFullWidth: false },
   { link: "/travaux/case/radionaut/4.webp", id: 4, isFullWidth: false },
   { link: "/travaux/case/radionaut/5.webp", id: 5, isFullWidth: false },
 ];
