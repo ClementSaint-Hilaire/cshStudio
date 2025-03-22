@@ -54,11 +54,11 @@ export default function ServiceSection() {
                 onMouseMove={handleMouseMove}
                 className="w-full max-w-[1680px] flex flex-col justify-start items-start gap-4 mb-16">
                     <AnimatedContent>
-                    <div className="self-stretch inline-flex justify-start items-start gap-1">
+                    <div className="inline-flex justify-start items-start gap-1">
                         <div className="justify-start text-monochrome-800 text-caption font-medium font-satoshi leading-3">01</div>
                         <div className="justify-start text-monochrome-800 text-title font-medium font-satoshi leading-[48px]">Branding</div>
                     </div>
-                    <div className="self-stretch h-0 outline outline-[1px] outline-offset-[-0.75px] outline-monochrome-500 mt-4 mb-8"></div>
+                    <div className="self-stretch h-0 outline outline-[1px] outline-monochrome-500 mt-4 mb-8"></div>
                     <div className="self-stretch inline-flex flex-col md:flex-row justify-start items-start gap-16">
                         <div className="hidden md:flex w-1/3 relative"></div>
                         <div className="flex w-full md:w-1/3 justify-start text-monochrome-500 text-subtitle font-medium font-satoshi leading-[30px]">Élevez votre marque pour incarner votre vision, inspirer un sentiment d’appartenance et mener avec conviction dans un monde en évolution.</div>
@@ -68,20 +68,20 @@ export default function ServiceSection() {
                 </a>
                 <a 
                 href="/travaux" 
-                onMouseEnter={() => setHoveredService(2)}
+                onMouseEnter={() => setHoveredService(4)}
                 onMouseLeave={() => setHoveredService(null)}
                 onMouseMove={handleMouseMove}
                 className="w-full max-w-[1680px] flex flex-col justify-start items-start gap-4 mb-16">
                     <AnimatedContent>
-                    <div className="self-stretch inline-flex flex-col md:flex-row justify-start items-start gap-1">
+                    <div className="self-stretch inline-flex justify-start items-start gap-1">
                         <div className="justify-start text-monochrome-800 text-caption font-medium font-satoshi leading-3">02</div>
                         <div className="justify-start text-monochrome-800 text-title font-medium font-satoshi leading-[48px]">Web design</div>
                     </div>
-                    <div className="self-stretch h-0 outline outline-[1px] outline-offset-[-0.75px] outline-monochrome-500 mt-4 mb-8"></div>
+                    <div className="self-stretch h-0 outline outline-[1px] outline-monochrome-500 mt-4 mb-8"></div>
                     <div className="self-stretch inline-flex flex-col md:flex-row justify-start items-start gap-16">
-                        <div className="hidden md:flex w-1/3 h-20 relative"></div>
-                        <div className="flex w-full md:w-1/3 justify-start text-monochrome-500 text-subtitle font-medium font-satoshi leading-[30px]">Créez une expérience digitale fluide et immersive où chaque détail renforce l’impact de votre marque.</div>
-                        <div className="flex w-full md:w-1/3 justify-start text-monochrome-800 text-base font-medium font-satoshi leading-snug">→ Design d’interfaces (UI)<br/>→ Expérience utilisateur (UX)<br/>→ Design system<br/>→ Iconographie</div>
+                        <div className="hidden md:flex w-1/3 relative"></div>
+                        <div className="flex w-full md:w-1/3 justify-start text-monochrome-500 text-subtitle font-medium font-satoshi leading-[30px]">Créez une expérience digitale fluide et immersive où chaque détail renforce l'impact de votre marque.</div>
+                        <div className="flex w-full md:w-1/3 justify-start text-monochrome-800 text-base font-medium font-satoshi leading-snug">→ Design d'interfaces UI<br/>→ Expérience utilisateur UX<br/>→ Design system<br/>→ Iconographie.</div>
                     </div>
                     </AnimatedContent>
                 </a>
@@ -96,10 +96,10 @@ export default function ServiceSection() {
                         <div className="justify-start text-monochrome-800 text-caption font-medium font-satoshi leading-3">03</div>
                         <div className="justify-start text-monochrome-800 text-title font-medium font-satoshi leading-[48px]">App design</div>
                     </div>
-                    <div className="self-stretch h-0 outline outline-[1px] outline-offset-[-0.75px] outline-monochrome-500 mt-4 mb-8"></div>
+                    <div className="self-stretch h-0 outline outline-[1px] outline-monochrome-500 mt-4 mb-8"></div>
                     <div className="self-stretch inline-flex flex-col md:flex-row justify-start items-start gap-16">
-                        <div className="hidden md:flex w-1/3 h-20 relative"></div>
-                        <div className="flex w-full md:w-1/3 justify-start text-monochrome-500 text-subtitle font-medium font-satoshi leading-[30px]">Concevez des applications intuitives et esthétiques qui allient performance et simplicité d’usage.</div>
+                        <div className="hidden md:flex w-1/3 relative"></div>
+                        <div className="flex w-full md:w-1/3 justify-start text-monochrome-500 text-subtitle font-medium font-satoshi leading-[30px]">Concevez des applications intuitives et esthétiques qui allient performance et simplicité d'usage.</div>
                         <div className="flex w-full md:w-1/3 justify-start text-monochrome-800 text-base font-medium font-satoshi leading-snug">→ UX/UI mobile & desktop<br/>→ Prototypage interactif<br/>→ Design system & composants<br/>→ Considérations pour iOS & Android</div>
                     </div>
                     </AnimatedContent>
@@ -115,7 +115,7 @@ export default function ServiceSection() {
                         <div className="justify-start text-monochrome-800 text-caption font-medium font-satoshi leading-3">04</div>
                         <div className="justify-start text-monochrome-800 text-title font-medium font-satoshi leading-[48px]">Graphic design</div>
                     </div>
-                    <div className="self-stretch h-0 outline outline-[1px] outline-offset-[-0.75px] outline-monochrome-500 mt-4 mb-8"></div>
+                    <div className="self-stretch h-0 outline outline-[1px] outline-monochrome-500 mt-4 mb-8"></div>
                     <div className="self-stretch inline-flex flex-col md:flex-row justify-start items-start gap-16">
                         <div className="hidden md:flex w-1/3 h-20 relative"></div>
                         <div className="flex w-full md:w-1/3 justify-start text-monochrome-500 text-subtitle font-medium font-satoshi leading-[30px]">Donnez vie à une identité visuelle forte et cohérente à travers des créations graphiques précises et impactantes.</div>
@@ -134,7 +134,7 @@ export default function ServiceSection() {
                         <div className="justify-start text-monochrome-800 text-caption font-medium font-satoshi leading-3">05</div>
                         <div className="justify-start text-monochrome-800 text-title font-medium font-satoshi leading-[48px]">Developpement</div>
                     </div>
-                    <div className="self-stretch h-0 outline outline-[1px] outline-offset-[-0.75px] outline-monochrome-500 mt-4 mb-8"></div>
+                    <div className="self-stretch h-0 outline outline-[1px] outline-monochrome-500 mt-4 mb-8"></div>
                     <div className="self-stretch inline-flex flex-col md:flex-row justify-start items-start gap-16">
                         <div className="hidden md:flex w-1/3 h-20 relative"></div>
                         <div className="flex w-full md:w-1/3 justify-start text-monochrome-500 text-subtitle font-medium font-satoshi leading-[30px]">Développez des solutions performantes et sur-mesure, en combinant technologies modernes et flexibilité du no-code.</div>

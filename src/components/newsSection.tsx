@@ -37,16 +37,16 @@ export default function NewsSection() {
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-6 relative">
-                    <div className="w-full md:w-3/4">
+                    <a href="/travaux/radionaut" className="w-full md:w-3/4">
                         <div className="sticky top-[16px]">
-                            <div 
+                            <div
                                 className="overflow-hidden rounded-[5px] mb-4"
                                 onMouseEnter={() => setHoveredIndex(0)}
                                 onMouseLeave={() => setHoveredIndex(null)}
                             >
                                 <HoverScale isHovered={hoveredIndex === 0}>
                                     <Image 
-                                        src="/produits/design-system.webp"
+                                        src="/news.webp"
                                         alt="Project thumbnail"
                                         width={1280}
                                         height={720}
@@ -55,11 +55,11 @@ export default function NewsSection() {
                                 </HoverScale>
                             </div>
                             <div>
-                                <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">csh Design System</h3>
-                                <p className="text-subbody font-medium font-satoshi text-monochrome-800">/design smarter not harder</p>
+                                <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">Radionaut</h3>
+                                <p className="text-subbody font-medium font-satoshi text-monochrome-800">/Explorez plus 40 000 radios simplement</p>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <div className="w-full md:w-1/4 flex flex-col gap-6">
                         <div className="flex-shrink-0">
