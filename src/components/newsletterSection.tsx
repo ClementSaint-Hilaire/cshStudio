@@ -54,7 +54,7 @@ export default function NewsletterSection() {
                         alt="Project thumbnail"
                         width={950}
                         height={535.99}
-                        className="mx-auto object-cover w-[800px] md:w-full md:max-w-[950px]"
+                        className="mx-auto object-cover w-[800px] md:w-full md:max-w-[950px] transition-transform duration-300 hover:scale-105"
                     />
                 </div>
             </AnimatedContent>
