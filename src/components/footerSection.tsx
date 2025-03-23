@@ -128,7 +128,7 @@ export default function FooterSection() {
                                         <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
                                     </span>
                                 </a>
-                                <a href="https://csh.beehiiv.com/" target="_blank" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                <a href="/newsletter" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
                                     <span className="relative">
                                         Newsletter
                                         <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>

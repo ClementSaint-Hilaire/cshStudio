@@ -19,15 +19,14 @@ export default function ProjectSection() {
         { imageLink: '/projets/hyperion.webp', category: 'Hyperion Cloud', width: 650, height: 366 },
         { imageLink: '/projets/beauregard2024.webp', category: 'Beauregard', width: 212, height: 300 },
         { imageLink: '/projets/memory-updated.webp', category: 'Exploration 001', width: 286, height: 400 },
+        { imageLink: '/projets/radionaut.webp', category: 'Radionaut', width: 400, height: 400 },
         { imageLink: '/projets/hyperion-app.webp', category: 'Hyperion Cloud', width: 300, height: 300 },
         { imageLink: '/projets/skorpia.webp', category: 'Skorpia', width: 658, height: 370 },
-        { imageLink: '/projets/radionaut2.webp', category: 'Radionaut', width: 535, height: 600 },
         { imageLink: '/projets/modern-bauhaus.webp', category: 'Bauhaus', width: 212, height: 300 },
         { imageLink: '/projets/coop-etiquette.webp', category: 'Coop 5pour100', width: 200, height: 200 },
         { imageLink: '/projets/hyperion-story.webp', category: 'Hyperion Cloud', width: 600, height: 338 },
         { imageLink: '/projets/assoreg-card.webp', category: 'Assoreg', width: 300, height: 250 },
         { imageLink: '/projets/cshstudio-wave.webp', category: 'cshStudio', width: 500, height: 450 },
-        { imageLink: '/projets/radionaut.webp', category: 'Coop 5pour100', width: 400, height: 400 },
         { imageLink: '/projets/radionaut2.webp', category: 'Radionaut', width: 446, height: 500 },
     ];
 
