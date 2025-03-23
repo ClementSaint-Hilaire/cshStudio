@@ -7,19 +7,19 @@ export default function NewsletterSection() {
         <section className="w-full px-4 md:px-6 lg:px-8 py-8 md:py-12 bg-monochrome-100">
             <div className="max-w-[1680px] mx-auto mt-32 flex flex-col gap-6">
                 <AnimatedContent delay={0.2}>
-                    <div className="text-center justify-start text-monochrome-800 text-display font-medium font-satoshi leading-[65px]">
+                    <div className="md:text-center justify-start text-monochrome-800 text-title md:text-display font-medium font-satoshi md:leading-[65px]">
                         Gardez le fil, chaque semaines.
                     </div>
                 </AnimatedContent>
                 
                 <AnimatedContent delay={0.9}>
-                    <div className="mx-auto w-full max-w-[800px] text-center justify-start text-monochrome-500 text-heading font-medium font-satoshi leading-relaxed">
+                    <div className="mx-auto w-full max-w-[800px] md:text-center justify-start text-monochrome-500 text-body md:text-heading font-medium font-satoshi leading-relaxed">
                         Tous les dimanches, profitez d'un résumé des dernières actualités technologiques de la semaine. Une sélection essentielle et sourcé pour rester informé sans perdre de temps.
                     </div>
                 </AnimatedContent>
 
                 <AnimatedContent delay={1.2}>
-                    <div className="flex flex-row justify-center items-center gap-6 w-full">
+                    <div className="flex flex-row md:justify-center items-center gap-6 w-full mb-8">
                         <a href="https://csh.beehiiv.com/" target="_blank" className="w-48 rounded-[12px] flex flex-col justify-center items-center gap-2.5">
                             <div className="self-stretch h-14 px-5 py-3 bg-monochrome-200 rounded-[12px] flex justify-center items-center gap-2 cursor-pointer group">
                                 <div className="flex flex-col justify-center items-start">
@@ -54,7 +54,7 @@ export default function NewsletterSection() {
                         alt="Project thumbnail"
                         width={950}
                         height={535.99}
-                        className="mx-auto object-cover w-full max-w-[950px]"
+                        className="mx-auto object-cover w-[800px] md:w-full md:max-w-[950px]"
                     />
                 </div>
             </AnimatedContent>
