@@ -768,6 +768,24 @@ video {
 .h-\[580px\] {
   height: 580px;
 }
+.h-36 {
+  height: 9rem;
+}
+.h-40 {
+  height: 10rem;
+}
+.h-64 {
+  height: 16rem;
+}
+.h-72 {
+  height: 18rem;
+}
+.h-\[500px\] {
+  height: 500px;
+}
+.h-\[629px\] {
+  height: 629px;
+}
 .max-h-0 {
   max-height: 0px;
 }
@@ -849,6 +867,21 @@ video {
 .w-\[500px\] {
   width: 500px;
 }
+.w-\[1196px\] {
+  width: 1196px;
+}
+.w-\[593\.35px\] {
+  width: 593.35px;
+}
+.w-\[723\.02px\] {
+  width: 723.02px;
+}
+.w-\[768px\] {
+  width: 768px;
+}
+.w-\[832px\] {
+  width: 832px;
+}
 .min-w-full {
   min-width: 100%;
 }
@@ -911,6 +944,10 @@ video {
   --tw-rotate: -35deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.rotate-\[-12\.47deg\] {
+  --tw-rotate: -12.47deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -929,8 +966,14 @@ video {
 .flex-col {
   flex-direction: column;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .place-items-center {
   place-items: center;
+}
+.content-start {
+  align-content: flex-start;
 }
 .items-start {
   align-items: flex-start;
@@ -1106,6 +1149,9 @@ video {
 }
 .p-4 {
   padding: 1rem;
+}
+.p-8 {
+  padding: 2rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -1296,6 +1342,9 @@ video {
 .text-monochrome-800 {
   --tw-text-opacity: 1;
   color: rgb(29 29 31 / var(--tw-text-opacity, 1));
+}
+.underline {
+  text-decoration-line: underline;
 }
 .opacity-0 {
   opacity: 0;
@@ -1647,6 +1696,10 @@ body {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:items-start {
