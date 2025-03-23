@@ -608,6 +608,9 @@ video {
 .top-\[70px\] {
   top: 70px;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .z-10 {
   z-index: 10;
 }
@@ -986,6 +989,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(29 29 31 / var(--tw-bg-opacity, 1));
 }
+.bg-monochrome-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 117 122 / var(--tw-bg-opacity, 1));
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1326,6 +1333,9 @@ body {
 }
 .group:hover .group-hover\:visible {
   visibility: visible;
+}
+.group:hover .group-hover\:w-full {
+  width: 100%;
 }
 .group:hover .group-hover\:-translate-x-1 {
   --tw-translate-x: -0.25rem;

@@ -79,12 +79,42 @@ export default function FooterSection() {
                             <AnimatedContent>
                             <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px] pb-8">Navigation</div>
                             <div className="self-stretch flex flex-col justify-start items-start gap-4">
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Index</div>
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Projets</div>
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Services</div>
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Produits</div>
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">A propos</div>
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Contact</div>
+                                <a href="/" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Index
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
+                                <a href="/travaux" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Travaux
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
+                                <a href="/services" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Services
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
+                                <a href="/produits" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Produits
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
+                                <a href="https://medium.com/@clement.sainthilaire.app" target="_blank" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Blog
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
+                                <a href="/contact" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Contact
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
                             </div>
                             </AnimatedContent>
                         </div>
@@ -92,10 +122,30 @@ export default function FooterSection() {
                             <AnimatedContent>
                             <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px] pb-8">Ressources</div>
                             <div className="self-stretch flex flex-col justify-start items-start gap-4">
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Resume</div>
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Newsletter</div>
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Serveur Discord</div>
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Blog</div>
+                                <a href="CV-clement-saint-hilaire.pdf" target="_blank" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Resume
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
+                                <a href="https://csh.beehiiv.com/" target="_blank" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Newsletter
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
+                                <a href="https://discord.gg/EPBXReEWak" target="_blank" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Serveur Discord
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
+                                <a href="https://medium.com/@clement.sainthilaire.app" target="_blank" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Blog
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
                             </div>
                             </AnimatedContent>
                         </div>
@@ -103,15 +153,35 @@ export default function FooterSection() {
                             <AnimatedContent>
                             <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px] pb-8">Contact</div>
                             <div className="flex flex-col justify-start items-start gap-4">
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Mail</div>
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Linkedin</div>
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Instagram</div>
-                                <div className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug">Threads</div>
+                                <a href="mailto:clement.sainthilaire.pro@gmail.com" target="_blank" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Mail
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
+                                <a href="www.linkedin.com/in/clément-saint-hilaire-01412a282" target="_blank" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        LinkedIn
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
+                                <a href="https://www.instagram.com/cshstudio/" target="_blank" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Instagram
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
+                                <a href="https://www.threads.net/@clement.sainthilaire" target="_blank" className="self-stretch relative justify-start text-monochrome-500 text-body font-medium font-satoshi leading-snug group">
+                                    <span className="relative">
+                                        Threads
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-monochrome-500 transition-all duration-300 group-hover:w-full"></span>
+                                    </span>
+                                </a>
                             </div>
                             </AnimatedContent>
                         </div>
                         <AnimatedContent>
-                        <div className="hidden md:flex w-[450px] inline-flex flex-col justify-center items-start gap-4">
+                        <a href="https://csh.beehiiv.com/" target="_blank" className="hidden md:flex w-[450px] inline-flex flex-col justify-center items-start gap-4">
                             <div className="relative justify-start text-monochrome-800 text-subtitle font-medium font-satoshi leading-[30px] pb-8">Newsletter</div>
                             <div className="self-stretch p-4 rounded-[999px] border border-monochrome-800 inline-flex justify-center items-center gap-2.5">
                                 <div className="flex-1 relative justify-start text-monochrome-500 text-body font-normal font-satoshi leading-snug">email</div>
@@ -121,7 +191,7 @@ export default function FooterSection() {
                                     </svg>  
                                 </div>
                             </div>
-                        </div>
+                        </a>
                         </AnimatedContent>
                         
                     </div>
