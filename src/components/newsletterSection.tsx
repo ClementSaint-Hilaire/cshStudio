@@ -50,7 +50,7 @@ export default function NewsletterSection() {
             <AnimatedContent delay={1.9}>
                 <div className="mx-auto">
                     <Image
-                        src="/autre/newsletter.webp"
+                        src="/community/newsletter.webp"
                         alt="Project thumbnail"
                         width={950}
                         height={535.99}
