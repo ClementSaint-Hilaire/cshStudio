@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimatedContent from '@/Animations/AnimatedContent';
 import Image from 'next/image';
-import ImageCarousel from '../Animations/ImageCarousel';
+import ImageCarousel from '@/Animations/ImageCarousel';
 
 export default function CommunityHeroSection() {
     return (
@@ -34,21 +34,40 @@ export default function CommunityHeroSection() {
                     <a href="https://clementsainthilaire.notion.site/csh-toolbox" target="_blank" className="w-full md:w-1/2 bg-monochrome-200 h-[500px] rounded-[5px] flex flex-col gap-4 px-8 pt-8 overflow-hidden">
                         <div className="w-full justify-start text-monochrome-800 text-heading md:text-title font-medium font-satoshi md:leading-[48px]">Des outils pour toutes les occasions.</div>
                         <div className="w-full justify-start text-monochrome-500 text-body font-medium font-satoshi">Profitez d'une large collection d'outils gratuit / open sources, dédiés aux designers et développeurs, regroupant plus de 10 catégories pensées pour faciliter chaque étape de la création.</div>
-                        <div className="relative flex-1 overflowvisible group">
-                            <ImageCarousel/>
+                        <div className="relative flex-1 group carousel-container">
+                            <ImageCarousel 
+                                images={[
+                                    '/community/1.webp',
+                                    '/community/2.webp',
+                                    '/community/3.webp',
+                                    '/community/4.webp',
+                                    '/community/5.webp'
+                                ]}
+                            />
+                            <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-monochrome-200 to-transparent pointer-events-none z-10"></div>
+                            <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-monochrome-200 to-transparent pointer-events-none z-10"></div>
                         </div>
                     </a>
                 </div>
 
                 <div className="flex flex-col md:flex-row w-full gap-4">
-                    <a className="w-full md:w-1/2 bg-monochrome-200 h-[500px] rounded-[5px] flex flex-col gap-4 p-8 overflow-hidden">
-                        <div className="w-full justify-start text-monochrome-800 text-heading md:text-title font-medium font-satoshi md:leading-[48px]">Create smarter not harder.</div>
-                        <div className="w-full justify-start text-monochrome-500 text-body font-medium font-satoshi">cshStudio prévoit une large collection de templates open source sur Figma et Notion. Retrouvez les sur notre page Produits et sur Figma.</div>
-                        <div className="relative flex-1 overflowvisible group">
-                            <ImageCarousel/>
+                    <a className="w-full md:w-1/2 bg-monochrome-200 h-[500px] rounded-[5px] flex flex-col gap-4 p-8 overflow-hidden justify-between">
+                        <div className="w-full justify-start text-monochrome-800 text-heading md:text-title font-medium font-satoshi md:leading-[48px]">Créez efficacement et simplement.</div>
+                        <div className="w-full justify-start text-monochrome-500 text-body font-medium font-satoshi">cshStudio prévoit une large collection de templates open source pour simplifier la composition de vos création et augmenter votre productivité, à retrouvez les sur notre page Produits et sur Figma.</div> 
+                        <div className="relative flex-1 group carousel-container">
+                            <ImageCarousel 
+                                images={[
+                                    '/community/6.webp',
+                                    '/community/7.webp',
+                                    '/community/8.webp',
+                                    '/community/9.webp'
+                                ]}
+                            />
+                            <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-monochrome-200 to-transparent pointer-events-none z-10"></div>
+                            <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-monochrome-200 to-transparent pointer-events-none z-10"></div>
                         </div>
                     </a>
-                    <a href="/newsletter" className="w-full md:w-1/2 bg-monochrome-200 h-[500px] rounded-[5px] flex flex-col gap-4 px-8 pt-8 overflow-hidden group">
+                    <a href="https://clementsainthilaire.notion.site/csh-toolbox" target="_blank" className="w-full md:w-1/2 bg-monochrome-200 h-[500px] rounded-[5px] flex flex-col gap-4 px-8 pt-8 overflow-hidden group">
                         <div className="w-full justify-start text-monochrome-800 text-heading md:text-title font-medium font-satoshi md:leading-[48px]">Gardez le fil, chaque semaines.</div>
                         <div className="w-full justify-start text-monochrome-500 text-body font-medium font-satoshi">Bienvenue dans Tech.Talk, votre rendez-vous hebdomadaire pour tout savoir sur l'actualité technologique.</div>
                         <Image
