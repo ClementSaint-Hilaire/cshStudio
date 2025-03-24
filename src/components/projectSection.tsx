@@ -19,6 +19,7 @@ export default function ProjectSection() {
         { imageLink: '/projets/hyperion.webp', category: 'Hyperion Cloud', width: 650, height: 366 },
         { imageLink: '/projets/beauregard2024.webp', category: 'Beauregard', width: 212, height: 300 },
         { imageLink: '/projets/memory-updated.webp', category: 'Exploration 001', width: 286, height: 400 },
+        { imageLink: '/projets/radionaut.webp', category: 'Radionaut', width: 400, height: 400 },
         { imageLink: '/projets/hyperion-app.webp', category: 'Hyperion Cloud', width: 300, height: 300 },
         { imageLink: '/projets/skorpia.webp', category: 'Skorpia', width: 658, height: 370 },
         { imageLink: '/projets/modern-bauhaus.webp', category: 'Bauhaus', width: 212, height: 300 },
@@ -26,7 +27,7 @@ export default function ProjectSection() {
         { imageLink: '/projets/hyperion-story.webp', category: 'Hyperion Cloud', width: 600, height: 338 },
         { imageLink: '/projets/assoreg-card.webp', category: 'Assoreg', width: 300, height: 250 },
         { imageLink: '/projets/cshstudio-wave.webp', category: 'cshStudio', width: 500, height: 450 },
-        { imageLink: '/projets/coop-flag.webp', category: 'Coop 5pour100', width: 400, height: 350 },
+        { imageLink: '/projets/radionaut2.webp', category: 'Radionaut', width: 446, height: 500 },
     ];
 
     useEffect(() => {

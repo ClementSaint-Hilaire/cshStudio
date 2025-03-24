@@ -11,7 +11,7 @@ export default function ProjectGrid() {
         { title: "Arc Compagny Sum'", category: "Graphic design", img: "/travaux/thumbnails/arc.webp", src: "/travaux/case/arc/arc.pdf" },
         { title: "Skorpia", category: "Branding", img: "/travaux/thumbnails/skorpia.webp", src: "/travaux/skorpia" },
         { title: "Assoreg", category: "Branding", img: "/travaux/thumbnails/assoreg.webp", src: "/travaux/assoreg" },
-        { title: "Croissantage.com", category: "Design web", img: "/travaux/thumbnails/croissantage.webp", src: "https://croissantge.com" },
+        { title: "Croissantage.com", category: "Design web", img: "/travaux/thumbnails/croissantage.webp", src: "https://croissantage.com" },
         { title: "Wattiz", category: "Branding", img: "/travaux/thumbnails/wattiz.webp", src: "#" },
         { title: "Retro Pizza", category: "Mobile App  ", img: "/travaux/thumbnails/pizza.webp", src: "#" },
     ];

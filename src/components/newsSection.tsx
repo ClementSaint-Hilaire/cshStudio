@@ -62,7 +62,7 @@ export default function NewsSection() {
                     </a>
 
                     <div className="w-full md:w-1/4 flex flex-col gap-6">
-                        <div className="flex-shrink-0">
+                        <a href="https://discord.gg/EPBXReEWak" target="_blank" className="flex-shrink-0">
                             <div 
                                 className="overflow-hidden rounded-[5px] mb-4"
                                 onMouseEnter={() => setHoveredIndex(1)}
@@ -82,7 +82,7 @@ export default function NewsSection() {
                                 <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">csh Discord</h3>
                                 <p className="text-subbody font-medium font-satoshi text-monochrome-800">/Ensemble, débatons d'actualités technologique & design</p>
                             </div>
-                        </div>
+                        </a>
                         <div className="flex-shrink-0">
                             <div 
                                 className="overflow-hidden rounded-[5px] mb-4"
@@ -104,7 +104,7 @@ export default function NewsSection() {
                                 <p className="text-subbody font-medium font-satoshi text-monochrome-800">/Plus de 1200 icons fait à la mains</p>
                             </div>
                         </div>
-                        <div className="flex-shrink-0">
+                        <a href="/newsletter" className="flex-shrink-0">
                             <div 
                                 className="overflow-hidden rounded-[5px] mb-4"
                                 onMouseEnter={() => setHoveredIndex(3)}
@@ -112,7 +112,7 @@ export default function NewsSection() {
                             >
                                 <HoverScale isHovered={hoveredIndex === 3}>
                                     <Image 
-                                        src="/produits/ui-kit.webp"
+                                        src="/produits/techtalk.webp"
                                         alt="Project thumbnail"
                                         width={1000}
                                         height={1000}
@@ -121,10 +121,10 @@ export default function NewsSection() {
                                 </HoverScale>
                             </div>
                             <div>
-                                <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">UI Landing Kit</h3>
-                                <p className="text-subbody font-medium font-satoshi text-monochrome-800">/concevez des landing pages esthétiques simplement</p>
+                                <h3 className="text-subtitle md:text-title font-medium font-satoshi text-monochrome-800">Tech.Talk</h3>
+                                <p className="text-subbody font-medium font-satoshi text-monochrome-800">/Votre résumé d'actualité technologique hebdomadaire.</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

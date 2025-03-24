@@ -32,9 +32,10 @@ export default function ContactSection() {
                     <div className="flex w-1/2 md:w-1/3 flex-col justify-start items-start gap-2">
                         <AnimatedContent direction="vertical" distance={20} delay={400}>
                             <div className="flex flex-col gap-3">
-                                <a href="mailto:clement.sainthilaire.pro@gmail.com" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed">→ Mail</a>
+                                <a href="mailto:clement.sainthilaire.pro@gmail.com" target="_blank" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed">→ Mail</a>
                                 <a href="https://www.threads.net/@clement.sainthilaire" target="_blank" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed">→ Threads</a>
                                 <a href="https://www.instagram.com/cshstudio/" target="_blank" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed">→ Instagram</a>
+                                <a href="www.linkedin.com/in/clément-saint-hilaire-01412a282" target="_blank" className="text-monochrome-500 text-body font-medium font-satoshi leading-relaxed">→ LinkedIn</a>
                             </div>
                         </AnimatedContent>
                     </div>
