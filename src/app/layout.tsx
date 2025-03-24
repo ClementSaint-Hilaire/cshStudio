@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
-import Noise from '@/Animations/Noise'
 
 const satoshi = localFont({
   src: [
@@ -15,7 +14,7 @@ const satoshi = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'CSH Studio',
+  title: 'cshStudio',
   description: 'Created with Next.js and TypeScript',
 }
 
@@ -26,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={satoshi.variable}>
-      <body className="bg-monochrome-100 dark:bg-monochrome-900 font-satoshi">
+      <body className="bg-monochrome-100 w-screen font-satoshi">
         {children}
       </body>
     </html>
